@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="micro_enterprise_oa:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="micro_enterprise_oa.war">
+      <element id="artifact" artifact-name="micro_enterprise_oa:war exploded" />
+    </root>
+  </artifact>
+</component>
