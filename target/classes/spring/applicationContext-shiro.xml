@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+
+   <!-- Shiro 的Web过滤器 -->
+   <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+      <property name="securityManager" ref="securityManager"/>
+      <!-- 如果没有认证将要跳转的登陆地址，http可访问的url，如果不在表单认证过虑器FormAuthenticationFilter中指定此地址就为身份认证地址 -->
+      <property name="loginUrl" value="/System_User/loginUI"/>
+      <!-- 没有权限跳转的地址 -->
+      <property name="unauthorizedUrl" value="/page/refuse"/>
+      <!-- shiro拦截器配置 -->
+      <property name="filters">
+         <map>
+            <entry key="authc" value-ref="formAuthenticationFilter"/>
+         </map>
+      </property>
+      <property name="filterChainDefinitions">
+         <value>
+            <!-- 必须通过身份认证方可访问，身份认 证的url必须和过虑器中指定的loginUrl一致 -->
+            / = authc
+            <!-- 退出拦截，请求logout.action执行退出操作 -->
+            /logout = logout
+            <!-- 无权访问页面 -->
+            /page/refuse = anon
+<!--             roles[XX]表示有XX角色才可访问
+            /item/list.action = roles[item],authc
+            /js/** anon
+            /images/** anon
+            /styles/** anon
+             user表示身份认证通过或通过记住我认证通过的可以访问
+            /** = user
+             /**放在最下边，如果一个url有多个过虑器则多个过虑器中间用逗号分隔，如：/** = user,roles[admin] -->
+
+         </value>
+      </property>
+   </bean>
+
+
+   <!-- 安全管理器 -->
+   <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+      <property name="realm" ref="userRealm"/>
+
+   </bean>
+
+   <!-- 自定义 realm -->
+   <bean id="userRealm" class="com.wzu.oa.common.shiro.UserRealm">
+   </bean>
+   <!-- 基于Form表单的身份验证过滤器，不配置将也会注册此过虑器，表单中的用户账号、密码及loginurl将采用默认值，建议配置 -->
+   <bean id="formAuthenticationFilter"
+         class="org.apache.shiro.web.filter.authc.FormAuthenticationFilter">
+      <!-- 表单中账号的input名称 -->
+      <property name="usernameParam" value="account"/>
+      <!-- 表单中密码的input名称 -->
+      <property name="passwordParam" value="password"/>
+      <!-- <property name="rememberMeParam" value="rememberMe"/> -->
+      <!-- loginurl：用户登陆地址，此地址是可以http访问的url地址 -->
+      <property name="loginUrl" value="/System_User/loginUI"/>
+   </bean>
+</beans>
+

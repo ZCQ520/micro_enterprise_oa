@@ -32,12 +32,20 @@
         <property name="dataSource" ref="dataSource" />
         <!-- 加载mybatis的全局配置文件 -->
         <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml" />
-        <!--<property name="mapperLocations" value="classpath:mapper"/>-->
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
     </bean>
 
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+
+    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
         <property name="basePackage" value="com.wzu.oa.mapper" />
+        <property name="properties">
+            <value>
+                mappers=tk.mybatis.mapper.common.Mapper
+            </value>
+        </property>
     </bean>
+
 
     <!-- 包扫描器，扫描带@Service注解的类 -->
     <context:component-scan base-package="com.wzu.oa"/>
@@ -49,24 +57,17 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <!-- 通知 -->
-    <tx:advice id="txAdvice" transaction-manager="transactionManager">
-        <tx:attributes>
-            <!-- 传播行为 -->
-            <tx:method name="save*" propagation="REQUIRED"/>
-            <tx:method name="insert*" propagation="REQUIRED"/>
-            <tx:method name="add*" propagation="REQUIRED"/>
-            <tx:method name="create*" propagation="REQUIRED"/>
-            <tx:method name="delete*" propagation="REQUIRED"/>
-            <tx:method name="update*" propagation="REQUIRED"/>
-            <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
-            <tx:method name="select*" propagation="SUPPORTS" read-only="true"/>
-            <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
-        </tx:attributes>
-    </tx:advice>
-    <!-- 切面 -->
-    <aop:config>
-        <aop:advisor advice-ref="txAdvice"
-                     pointcut="execution(* com.wzu.oa.service.*.*(..))"/>
-    </aop:config>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- 配置一个spring提供的对象，用于创建一个流程引擎配置对象 -->
+    <bean id="ProcessEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="databaseSchemaUpdate" value="true"/>
+    </bean>
+
+    <!-- 创建流程引擎对象 -->
+    <bean id="ProcessEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+        <property name="processEngineConfiguration" ref="ProcessEngineConfiguration"/>
+    </bean>
+
 </beans>
