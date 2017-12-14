@@ -1,7 +1,7 @@
 package com.wzu.oa.service;
 
 
-import com.wzu.oa.common.entity.UserBase;
+import com.wzu.oa.common.entity.User;
 
 /**
  * @author jack
@@ -9,12 +9,16 @@ import com.wzu.oa.common.entity.UserBase;
  */
 public interface UserService {
 
-    void addUser(UserBase user);
+    /**
+     * 添加用户
+     * @param user
+     */
+    void addUser(User user);
 
     /**
      * 根据用户账号查询用户
-     * @param account
+     * @param username
      * @return
      */
-     UserBase findUserByAccount(String account);
+     User findUserByUsername(String username);
 }

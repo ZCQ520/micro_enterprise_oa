@@ -19,7 +19,7 @@
    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
       <property name="securityManager" ref="securityManager"/>
       <!-- 如果没有认证将要跳转的登陆地址，http可访问的url，如果不在表单认证过虑器FormAuthenticationFilter中指定此地址就为身份认证地址 -->
-      <property name="loginUrl" value="/System_User/loginUI"/>
+      <property name="loginUrl" value="/SystemUser/loginUI"/>
       <!-- 没有权限跳转的地址 -->
       <property name="unauthorizedUrl" value="/page/refuse"/>
       <!-- shiro拦截器配置 -->
@@ -82,7 +82,7 @@
       <property name="passwordParam" value="password"/>
       <!-- <property name="rememberMeParam" value="rememberMe"/> -->
       <!-- loginurl：用户登陆地址，此地址是可以http访问的url地址 -->
-      <property name="loginUrl" value="/System_User/loginUI"/>
+      <property name="loginUrl" value="/SystemUser/loginUI"/>
    </bean>
 
 

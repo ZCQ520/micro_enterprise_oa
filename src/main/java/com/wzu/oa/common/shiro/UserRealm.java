@@ -1,7 +1,6 @@
 package com.wzu.oa.common.shiro;
 
-import com.wzu.oa.common.entity.Permission;
-import com.wzu.oa.common.entity.UserBase;
+import com.wzu.oa.common.entity.User;
 import com.wzu.oa.service.UserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -19,6 +18,7 @@ public class UserRealm extends AuthorizingRealm{
     @Resource
     private UserService userService;
 
+    @Override
     public String getName(){
         return "UserRealm";
     }
@@ -36,9 +36,9 @@ public class UserRealm extends AuthorizingRealm{
 
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-        String account = (String) token.getPrincipal();
-        UserBase userBase = userService.findUserByAccount(account);
-        String password = userBase.getPassword();
-        return new SimpleAuthenticationInfo(userBase,password,getName());
+        String username = (String) token.getPrincipal();
+        User user = userService.findUserByUsername(username);
+        String password = user.getPassword();
+        return new SimpleAuthenticationInfo(user,password,getName());
     }
 }

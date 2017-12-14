@@ -21,8 +21,21 @@ public class PageController {
         return page;
     }
 
-    @RequestMapping("/System_User/{page}")
+    @RequestMapping("/SystemUser/{page}")
     public String toSystemUserPage(@PathVariable("page") String page){
-        return "/System_User/"+page;
+        return "/SystemUser/"+page;
     }
+
+
+    @RequestMapping("/SystemRole/{page}")
+    public String toSystemRolePage(@PathVariable("page") String page){
+        return "/SystemRole/"+page;
+    }
+
+    @RequestMapping("/SystemDepartment/{page}")
+    public String toSystemDepartmentPage(@PathVariable("page") String page){
+        return "/SystemDepartment/"+page;
+    }
+
+
 }

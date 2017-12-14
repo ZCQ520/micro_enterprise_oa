@@ -21,8 +21,7 @@
      -->
     <mvc:annotation-driven/>
 
-    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/"/>
-    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
+
     <mvc:resources mapping="/script/**" location="/WEB-INF/script/"/>
     <mvc:resources mapping="/style/**" location="/WEB-INF/style/"/>
     <mvc:resources mapping="/page/script/**" location="/WEB-INF/script/"/>

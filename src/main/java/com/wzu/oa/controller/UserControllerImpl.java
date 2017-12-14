@@ -1,7 +1,7 @@
 package com.wzu.oa.controller;
 
 
-import com.wzu.oa.common.entity.UserBase;
+import com.wzu.oa.common.entity.User;
 import com.wzu.oa.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -36,11 +36,11 @@ public class UserControllerImpl {
             UsernamePasswordToken token = new UsernamePasswordToken(account, password);
             Subject subject = SecurityUtils.getSubject();
             subject.login(token);//验证角色和权限
-            UserBase userBase = (UserBase) subject.getPrincipal();
-            session.setAttribute("username",userBase.getName());
+            User user = (User) subject.getPrincipal();
+            session.setAttribute("username",user.getUsername());
         } catch (Exception ex) {
                 model.addAttribute("error","未知错误");
-            return "/System_User/loginUI";
+            return "/SystemUser/loginUI";
         }
         return "/index";
     }
@@ -50,12 +50,12 @@ public class UserControllerImpl {
     public String logout() {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
-        return "/System_User/logout";
+        return "/SystemUser/logout";
     }
 
     @RequestMapping("/addUser")
     public String addUser() {
-        UserBase user = new UserBase();
+        User user = new User();
         userService.addUser(user);
         return null;
     }
