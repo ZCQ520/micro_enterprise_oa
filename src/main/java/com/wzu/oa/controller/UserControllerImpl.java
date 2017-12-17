@@ -37,7 +37,7 @@ public class UserControllerImpl {
             Subject subject = SecurityUtils.getSubject();
             subject.login(token);//验证角色和权限
             User user = (User) subject.getPrincipal();
-            session.setAttribute("username",user.getUsername());
+            session.setAttribute("user",user);
         } catch (Exception ex) {
                 model.addAttribute("error","未知错误");
             return "/SystemUser/loginUI";

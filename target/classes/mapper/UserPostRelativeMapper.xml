@@ -9,4 +9,13 @@
     <result column="userId" jdbcType="INTEGER" property="userid" />
     <result column="postId" jdbcType="INTEGER" property="postid" />
   </resultMap>
+  <delete id="deleteByUserId" parameterType="int">
+    DELETE FROM user_post_relative WHERE userId = #{uid}
+  </delete>
+
+  <select id="getUserPostRelativeByUserId" parameterType="int" resultType="com.wzu.oa.common.entity.UserPostRelative">
+    SELECT *
+    FROM user_post_relative
+    WHERE userId = #{uid}
+  </select>
 </mapper>

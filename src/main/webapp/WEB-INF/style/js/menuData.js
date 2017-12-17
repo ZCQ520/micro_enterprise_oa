@@ -95,28 +95,7 @@ var privilegeDate = [{
 	url:'LanDisk_Folder/list.html',
 	icon:'style/images/MenuIcon/FUNC20056.gif',
     isParent: false
-}, {
-    id: '5',
-    pid: '1',
-    name: '行政管理',
-	icon:'style/images/MenuIcon/manager.gif',
-    isParent: true,
-	nodes:[
-		{
-			id:'51',
-			pid:'5',
-			isParent: false,
-			icon:'style/images/MenuIcon/FUNC20070.gif',
-			name:'考勤管理'
-		},{
-			id:'52',
-			pid:'5',
-			isParent: false,
-			icon:'style/images/MenuIcon/FUNC20064.gif',
-			name:'会议管理'
-		}
-	]
-}, {
+},{
     id: '6',
     pid: '1',
     name: '人力资源',
@@ -162,12 +141,6 @@ var privilegeDate = [{
 		}
 	]
 }, {
-    id: '7',
-    pid: '1',
-    name: '电子邮件',
-	icon:'style/images/MenuIcon/eml.gif',
-    isParent: false
-}, {
     id: '9',
     pid: '1',
     name: '个人设置',
@@ -180,14 +153,14 @@ var privilegeDate = [{
 			name:'个人信息',
 			target:'right',
 			icon:'style/images/MenuIcon/FUNC20001.gif',
-			url:'Person_Config/editUserInfoUI.html',
+			url:'PersonConfig/editUserInfoUI',
 			isParent:false
 		},{
 			id:'92',
 			pid:'9',
 			name:'密码修改',
 			target:'right',
-			url:'Person_Config/editPasswordUI.html',
+			url:'PersonConfig/editPasswordUI',
 			icon:'style/images/MenuIcon/FUNC241000.gif',
 			isParent:false
 		}

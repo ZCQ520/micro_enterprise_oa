@@ -6,6 +6,7 @@ com\wzu\oa\mapper\DepartmentMapper.class
 com\wzu\oa\common\entity\Department.class
 com\wzu\oa\mapper\UserPostRelativeMapper.class
 com\wzu\oa\service\impl\UserServiceImpl.class
+com\wzu\oa\controller\PersonConfigController.class
 com\wzu\oa\service\UserService.class
 com\wzu\oa\common\entity\User.class
 com\wzu\oa\controller\PageController.class

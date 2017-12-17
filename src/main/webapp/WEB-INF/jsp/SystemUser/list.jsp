@@ -55,7 +55,7 @@
                 <td>${user.departmentName}&nbsp;</td>
                 <td>${user.user.note}&nbsp;</td>
                 <td><a onClick="return delConfirm()" href="${pageContext.request.contextPath}/SystemUser/deleteUser?uid=${user.user.id}">删除</a>
-                    <a href="saveUI.jsp">修改</a>
+                    <a href="${pageContext.request.contextPath}/SystemUser/toUpdateUserUI?uid=${user.user.id}">修改</a>
                     <a href="javascript:privilegeclick();">设置权限</a>
                 </td>
             </tr>

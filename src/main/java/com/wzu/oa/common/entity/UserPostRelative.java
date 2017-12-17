@@ -4,6 +4,15 @@ import javax.persistence.*;
 
 @Table(name = "user_post_relative")
 public class UserPostRelative {
+
+    public UserPostRelative() {
+    }
+
+    public UserPostRelative(Integer userid, Integer postid) {
+        this.userid = userid;
+        this.postid = postid;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

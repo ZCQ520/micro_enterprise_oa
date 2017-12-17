@@ -24,7 +24,7 @@ public interface SystemManagerService {
      * 查找所有一级部门列表
      * @return
      */
-    List<Department> findAllDepartment();
+    List<Department> getFirstDepartment();
 
     /**
      * 查找所有用户
@@ -87,4 +87,42 @@ public interface SystemManagerService {
      * @return
      */
     boolean deleteUserById(Integer uid);
+
+    /**
+     * 获取所有部门列表，包括二级部门
+     * @return
+     */
+    List<Department> findAllDepartment();
+
+    /**
+     * 添加或修改用户
+     * @param user
+     * @param roleIdList
+     * @return
+     */
+    boolean saveOrUpdateUser(User user, Integer[] roleIdList);
+
+    /**
+     * 添加或修改用户
+     * @param user
+     * @return
+     */
+    boolean saveOrUpdateUser(User user);
+
+    /**
+     * 根据用户id获取用户信息
+     * @param uid
+     * @return
+     */
+    User getUserById(Integer uid);
+
+    /**
+     * 根据用户id获取该用户所有岗位信息
+     * @param id
+     * @return
+     */
+    List<Post> getUserPostsByUserId(Integer id);
+
+
+
 }

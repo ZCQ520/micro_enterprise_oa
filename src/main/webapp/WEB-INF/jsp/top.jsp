@@ -18,11 +18,11 @@
 		
 		<div id="Head1Right">
 			<div id="Head1Right_UserName">
-                <img border="0" width="13" height="14" src="${pageContext.request.contextPath}/style/images/top/user.gif" /> 您好，<b>${username}</b>
+                <img border="0" width="13" height="14" src="${pageContext.request.contextPath}/style/images/top/user.gif" /> 您好，<b>${user.username}</b>
 			</div>
 			<div id="Head1Right_UserDept"></div>
 			<div id="Head1Right_UserSetup">
-            	<a href="javascript:void(0)">
+            	<a href="${pageContext.request.contextPath}/page/PersonConfig/editUserInfoUI" target="right" >
 					<img border="0" width="13" height="14" src="${pageContext.request.contextPath}/style/images/top/user_setup.gif" /> 个人设置
 				</a>
 			</div>
@@ -78,4 +78,5 @@
 	</div>
 
 </body>
+
 </html>

@@ -89,34 +89,7 @@ var privilegeDate = [{
 	target:'right',
 	icon:'/style/images/MenuIcon/FUNC20056.gif',
     isParent: false
-}, {
-    id: '5',
-    pid: '1',
-    name: '行政管理',
-	icon:'/style/images/MenuIcon/manager.gif',
-    isParent: true,
-	nodes:[
-		{
-			id:'51',
-			pid:'5',
-			isParent: false,
-			icon:'/style/images/MenuIcon/FUNC20070.gif',
-			name:'考勤管理'
-		},{
-			id:'52',
-			pid:'5',
-			isParent: false,
-			icon:'/style/images/MenuIcon/FUNC20064.gif',
-			name:'会议管理'
-		},{
-			id:'53',
-			pid:'5',
-			isParent: false,
-			icon:'/style/images/MenuIcon/radio_blue.gif',
-			name:'车辆管理'
-		}
-	]
-}, {
+},  {
     id: '6',
     pid: '1',
     name: '人力资源',
@@ -161,40 +134,7 @@ var privilegeDate = [{
 			name:'薪酬制度'
 		}
 	]
-}, {
-    id: '7',
-    pid: '1',
-    name: '电子邮件',
-	icon:'/style/images/MenuIcon/eml.gif',
-    isParent: false
-}, {
-    id: '8',
-    pid: '1',
-    name: '实用工具',
-	icon:'/style/images/MenuIcon/FUNC20076.gif',
-    isParent: true,
-	nodes:[
-		{
-			id:'81',
-			pid:'8',
-			name:'车票预定',
-			icon:'/style/images/MenuIcon/FUNC220000.gif',
-			isParent:false
-		},{
-			id:'82',
-			pid:'8',
-			name:'GIS查询',
-			icon:'/style/images/MenuIcon/search.gif',
-			isParent:false
-		},{
-			id:'83',
-			pid:'8',
-			name:'邮政编码',
-			icon:'/style/images/MenuIcon/FUNC249000.gif',
-			isParent:false
-		}
-	]
-}, {
+},{
     id: '9',
     pid: '1',
     name: '个人设置',

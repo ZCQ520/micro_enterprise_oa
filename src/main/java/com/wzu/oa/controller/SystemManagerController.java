@@ -1,5 +1,6 @@
 package com.wzu.oa.controller;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import com.wzu.oa.common.entity.DTO.UserDTO;
 import com.wzu.oa.common.entity.Department;
 import com.wzu.oa.common.entity.Post;
@@ -96,7 +97,7 @@ public class SystemManagerController {
      */
     @RequestMapping(value = "/page/SystemDepartment/list")
     public String systemDepartmentList(Model model) {
-        List<Department> departments = systemManagerService.findAllDepartment();
+        List<Department> departments = systemManagerService.getFirstDepartment();
         model.addAttribute("departments", departments);
         return "/SystemDepartment/list";
     }
@@ -213,6 +214,53 @@ public class SystemManagerController {
         if (!result)
             model.addAttribute("msg","删除失败");
         return "forward:/page/SystemUser/list";
+    }
+
+    /**
+     * 跳转到添加用户界面
+     * @return
+     */
+    @RequestMapping("/SystemUser/saveUI")
+    public String toSystemUserSaveUI(Model model){
+        List<Department> departments = systemManagerService.findAllDepartment();
+        List<Post> posts = systemManagerService.findAllPost();
+        model.addAttribute("departments",departments);
+        model.addAttribute("posts",posts);
+        return "/SystemUser/saveUI";
+    }
+
+
+    /**
+     * 添加或修改用户
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "/SystemUser/saveOrUpdateUser")
+    public String saveOrUpdateUser(Model model, User user,Integer[] roleIdList) {
+        boolean result = systemManagerService.saveOrUpdateUser(user,roleIdList);
+        if (result) {
+            return "redirect:/page/SystemUser/list";
+        } else {
+            model.addAttribute("msg", "添加失败");
+            return "SystemUser/saveUI";
+        }
+    }
+
+
+    /**
+     * 添加或修改用户
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "/SystemUser/toUpdateUserUI")
+    public String toUpdateUserUI(Model model, Integer uid) {
+        List<Department> departments = systemManagerService.findAllDepartment();
+        List<Post> posts = systemManagerService.findAllPost();
+        User user = systemManagerService.getUserById(uid);
+        model.addAttribute("departments",departments);
+        model.addAttribute("posts",posts);
+        model.addAttribute("user",user);
+        return "/SystemUser/saveUI";
     }
 
 }

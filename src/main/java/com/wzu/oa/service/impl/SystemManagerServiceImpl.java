@@ -5,9 +5,11 @@ import com.wzu.oa.common.entity.Department;
 import com.wzu.oa.common.entity.Post;
 import com.wzu.oa.common.entity.DTO.SecondDepartment;
 import com.wzu.oa.common.entity.User;
+import com.wzu.oa.common.entity.UserPostRelative;
 import com.wzu.oa.mapper.DepartmentMapper;
 import com.wzu.oa.mapper.PostMapper;
 import com.wzu.oa.mapper.UserMapper;
+import com.wzu.oa.mapper.UserPostRelativeMapper;
 import com.wzu.oa.service.SystemManagerService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,6 +34,9 @@ public class SystemManagerServiceImpl implements SystemManagerService {
     @Resource
     private DepartmentMapper departmentMapper;
 
+    @Resource
+    private UserPostRelativeMapper userPostRelativeMapper;
+
     @Override
     public List<Post> findAllPost() {
         List<Post> posts = postMapper.selectAll();
@@ -39,7 +44,7 @@ public class SystemManagerServiceImpl implements SystemManagerService {
     }
 
     @Override
-    public List<Department> findAllDepartment() {
+    public List<Department> getFirstDepartment() {
         List<Department> departments = departmentMapper.findFirstDept();
         return departments;
     }
@@ -48,11 +53,11 @@ public class SystemManagerServiceImpl implements SystemManagerService {
     public List<UserDTO> findAllUser() {
         List<User> users = userMapper.selectAll();
         List<UserDTO> userDTOS = new ArrayList<>();
-        if (users.size()!=0){
-            for (User user:users) {
+        if (users.size() != 0) {
+            for (User user : users) {
                 UserDTO userDTO = new UserDTO();
                 userDTO.setUser(user);
-                if (user.getDepartmentId()!=null){
+                if (user.getDepartmentId() != null) {
                     Department department = departmentMapper.selectByPrimaryKey(user.getDepartmentId());
                     userDTO.setDepartmentName(department.getName());
                 }
@@ -132,10 +137,64 @@ public class SystemManagerServiceImpl implements SystemManagerService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public boolean deleteUserById(Integer uid) {
+        userPostRelativeMapper.deleteByUserId(uid);
         int i = userMapper.deleteByPrimaryKey(uid);
-        if (i==1)
+        if (i == 1){
             return true;
+        }
         return false;
+    }
+
+    @Override
+    public List<Department> findAllDepartment() {
+        List<Department> departments = departmentMapper.selectAll();
+        return departments;
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public boolean saveOrUpdateUser(User user, Integer[] roleIdList) {
+        boolean result = saveOrUpdateUser(user);
+        if (roleIdList != null && roleIdList.length > 0) {
+            for (Integer roleId : roleIdList)
+                userPostRelativeMapper.insert(new UserPostRelative(user.getId(), roleId));
+        }
+        return result;
+    }
+
+    @Override
+    public boolean saveOrUpdateUser(User user) {
+        boolean result = false;
+        if (user.getId() == null) {
+            if (userMapper.insert(user) == 1) {
+                result = true;
+            }
+
+        } else {
+            if (userMapper.updateByPrimaryKey(user) == 1) {
+                userPostRelativeMapper.deleteByUserId(user.getId());
+                result = true;
+            }
+        }
+        return result;
+    }
+
+    @Override
+    public User getUserById(Integer uid) {
+        User user = userMapper.selectByPrimaryKey(uid);
+        return user;
+    }
+
+    @Override
+    public List<Post> getUserPostsByUserId(Integer uid) {
+        List<UserPostRelative> userPostRelatives =  userPostRelativeMapper.getUserPostRelativeByUserId(uid);
+        List<Post> posts = new ArrayList<>();
+        if (userPostRelatives!=null&&userPostRelatives.size()>0){
+            for (UserPostRelative userPostRelative: userPostRelatives){
+                posts.add(postMapper.selectByPrimaryKey(userPostRelative.getPostid()));
+            }
+        }
+        return posts;
     }
 }
 
