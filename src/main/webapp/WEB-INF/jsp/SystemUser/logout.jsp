@@ -3,7 +3,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>您已退出Itcast OA系统</title>
+<title>您已退出Micro Enterprise OA系统</title>
 	<link href="${pageContext.request.contextPath}/style/blue/logout.css" rel="stylesheet" type="text/css" />
 </head>
 <script type="text/javascript">

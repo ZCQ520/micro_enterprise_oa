@@ -30,6 +30,14 @@ public class UserControllerImpl {
     private UserService userService;
 
 
+    /**
+     * 用户登陆
+     * @param model
+     * @param session
+     * @param account
+     * @param password
+     * @return
+     */
     @RequestMapping(method = RequestMethod.POST, value = "/login")
     public String login(Model model, HttpSession session,String account, String password) {
         try {
@@ -46,6 +54,10 @@ public class UserControllerImpl {
     }
 
 
+    /**
+     * 退出登陆
+     * @return
+     */
     @RequestMapping(value = "/logout")
     public String logout() {
         Subject subject = SecurityUtils.getSubject();
@@ -53,10 +65,5 @@ public class UserControllerImpl {
         return "/SystemUser/logout";
     }
 
-    @RequestMapping("/addUser")
-    public String addUser() {
-        User user = new User();
-        userService.addUser(user);
-        return null;
-    }
+
 }

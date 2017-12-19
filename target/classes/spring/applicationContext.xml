@@ -62,6 +62,7 @@
     <!-- 配置一个spring提供的对象，用于创建一个流程引擎配置对象 -->
     <bean id="ProcessEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
         <property name="transactionManager" ref="transactionManager"/>
+        <property name="dataSource" ref="dataSource"/>
         <property name="databaseSchemaUpdate" value="true"/>
     </bean>
 

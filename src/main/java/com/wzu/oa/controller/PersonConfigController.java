@@ -22,11 +22,22 @@ public class PersonConfigController {
     @Resource
     private SystemManagerService systemManagerService;
 
+    /**
+     * 跳转修改密码界面
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/page/PersonConfig/editPasswordUI")
     public String editPasswordUI(Model model) {
         return "/PersonConfig/editPasswordUI";
     }
 
+    /**
+     * 跳转编辑用户个人信息界面
+     * @param model
+     * @param session
+     * @return
+     */
     @RequestMapping(value = "/page/PersonConfig/editUserInfoUI")
     public String editUserInfoUI(Model model, HttpSession session) {
         User user = (User) session.getAttribute("user");
@@ -37,6 +48,14 @@ public class PersonConfigController {
         return "/PersonConfig/editUserInfoUI";
     }
 
+    /**
+     * 修改密码
+     * @param model
+     * @param session
+     * @param oldPassword
+     * @param password
+     * @return
+     */
     @RequestMapping(value = "/PersonConfig/updatePassword")
     public String updatePassword(Model model,HttpSession session,String oldPassword ,String password) {
         User user = (User) session.getAttribute("user");

@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  * @date 2017/10/23   21:40
  */
 @Service
-@Transactional
+@Transactional(rollbackFor = Exception.class)
 public class UserServiceImpl implements UserService {
 
     @Resource

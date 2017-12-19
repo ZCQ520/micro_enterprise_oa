@@ -5,41 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2c282c6-cfb0-42fa-a13f-c50a117bfb4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PersonConfig/editPasswordUI.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PersonConfig/editUserInfoUI.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/common/entity/UserPostRelative.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/common/entity/UserPostRelative.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/SystemManagerController.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/SystemManagerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/UserControllerImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/UserControllerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/mapper/UserPostRelativeMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/mapper/UserPostRelativeMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/SystemManagerService.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/SystemManagerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/SystemManagerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/SystemManagerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/list_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/list_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/saveUI_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/saveUI_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/top_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/top_jsp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/processimage.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Template.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/ProcessDefinitionController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/TemplateMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ProcessDefinitionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/TemplateService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/TemplateServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.bpmn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TemplateMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approvedHistory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/editAndResubmitUI.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/formTemplateList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/formTemplateList.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myApprovedList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/selectToNodeUI.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.html.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/selectTransitionUI.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowHtmlFormTemplate/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowHtmlFormTemplate/saveUI.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/deployUI.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/saveApproveProcessUI.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/saveProcessNodeUI.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/UserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/UserPostRelative.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/UserPostRelative.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/SystemManagerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/SystemManagerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/UserControllerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/UserControllerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/UserPostRelativeMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/UserPostRelativeMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/SystemManagerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/SystemManagerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/SystemManagerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/SystemManagerServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserPostRelativeMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserPostRelativeMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/saveUI.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/saveUI.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/top.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/top.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/logout.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/logout.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/menu.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/pageCommon.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/pageCommon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/UserPostRelativeMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UserPostRelativeMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring/springmvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/list_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/list_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/saveUI_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/saveUI_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/right_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/right_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/top_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/top_jsp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,11 +71,69 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
+    <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="micro_enterprise_oa@localhost" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="micro_enterprise_oa@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="micro_enterprise_oa" type="e3449647:DbNodeDescriptor" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TemplateController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saveUI.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="66" column="53" lean-forward="false" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemplateService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/TemplateService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemplateServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/TemplateServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -92,8 +163,9 @@
       <find>${Page}</find>
       <find>${pageContext.request.contextPath}</find>
       <find>TableData</find>
-      <find>../</find>
       <find>save</find>
+      <find>../</find>
+      <find>ItCast</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -114,26 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext-shiro.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Post.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/shiro/UserRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/list.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/saveUI.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/setPrivilegeUI.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/selectUserUI.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/setPrivilegeUI.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/_list_level2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/_show.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/list_treeview.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/PostService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/PostServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/PostMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/saveUI.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Department.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/SecondDepartment.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/saveUI.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/list.jsp" />
@@ -151,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/SystemManagerController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bottom.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/UserControllerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/UserPostRelativeMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserPostRelativeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PersonConfig/editUserInfoUI.jsp" />
@@ -160,11 +211,32 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/top.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/SystemManagerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/SystemManagerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/saveUI.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PersonConfig/editPasswordUI.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/saveApproveProcessUI.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/saveProcessNodeUI.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/deployUI.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.bpmn" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ProcessDefinitionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/ProcessDefinitionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/TemplateMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/TemplateService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/TemplateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/logout.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/menu.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/pageCommon.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/UserControllerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java" />
       </list>
     </option>
   </component>
@@ -226,10 +298,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -341,7 +411,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="FlowFormTemplate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
@@ -350,7 +421,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="FlowHtmlFormTemplate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
@@ -359,13 +431,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="SystemRole" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro_enterprise_oa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="SystemUser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +459,8 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mybatis_generator/pom.xml" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -391,11 +476,11 @@
       <recent name="com.wzu.oa.common.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\geetion\micro_enterprise_oa\src\main\resources\mapper" />
+      <recent name="E:\geetion\micro_enterprise_oa\src\main\webapp\WEB-INF\jsp" />
       <recent name="E:\geetion\micro_enterprise_oa\src\main\webapp\WEB-INF\jsp\PersonConfig" />
       <recent name="E:\geetion\micro_enterprise_oa\src\main\webapp\WEB-INF\jsp\SystemDepartment" />
       <recent name="E:\geetion\micro_enterprise_oa\src\main\java\com\wzu\oa\common\entity" />
-      <recent name="E:\geetion\micro_enterprise_oa\src\main\java\com\wzu\oa\mapper" />
-      <recent name="E:\geetion\micro_enterprise_oa\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -530,11 +615,13 @@
       <workItem from="1513230066078" duration="6063000" />
       <workItem from="1513311257612" duration="9051000" />
       <workItem from="1513481878396" duration="8158000" />
+      <workItem from="1513571816572" duration="10862000" />
+      <workItem from="1513661118777" duration="13009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110989000" />
+    <option name="totallyTimeSpent" value="134860000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,41 +636,41 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="BPMN Editor" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17776097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20574887" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.567753" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5660377" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.4871355" order="7" side_tool="false" content_ui="combo" x="529" y="72" width="308" height="583" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397882" sideWeight="0.4871355" order="7" side_tool="false" content_ui="combo" x="529" y="72" width="308" height="583" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23827533" sideWeight="0.5128645" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="BPMN Editor" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17776097" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,420 +689,332 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1188">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-447">
-          <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/saveApproveProcessUI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="64" lean-forward="false" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/saveProcessNodeUI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="64" lean-forward="false" selection-start-line="1" selection-start-column="64" selection-end-line="1" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/processimage.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/SystemManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3749">
+          <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0.jar!/org/activiti/engine/impl/RepositoryServiceImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0.jar!/org/activiti/engine/RepositoryService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/script/pageCommon.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0.jar!/org/activiti/engine/repository/DeploymentBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="133" column="9" lean-forward="false" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+        <state relative-caret-position="185">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/script/DemoData.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/script/DataShowManager.js" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="123" column="12" lean-forward="false" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+        <state relative-caret-position="-345">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="37" column="55" lean-forward="false" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.0.RELEASE/spring-web-4.2.0.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1124" column="0" lean-forward="false" selection-start-line="1124" selection-start-column="0" selection-end-line="1124" selection-end-column="0" />
+        <state relative-caret-position="373">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.0.RELEASE/spring-web-4.2.0.RELEASE-sources.jar!/org/springframework/web/multipart/MultipartFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="107" column="9" lean-forward="false" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.0.RELEASE/spring-web-4.2.0.RELEASE-sources.jar!/org/springframework/web/multipart/commons/CommonsMultipartFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.bpmn" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/deployUI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d1380149-3314-49d1-afe8-347ca3cc617b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.bpmn">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="bpmn-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="uml://BPMN_2_0/flowPath=E:/geetion/micro_enterprise_oa/src/main/resources/activityBPM/qjlc.xml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>BPMN_2_0</ID>
+          <OriginalElement>flowPath=E:/geetion/micro_enterprise_oa/src/main/resources/activityBPM/qjlc.xml</OriginalElement>
+          <nodes>
+            <node x="" y="">&lt;invalid&gt;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="50.0" y="126.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Details</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/416503ed/d1380149-3314-49d1-afe8-347ca3cc617b/micro_enterprise_oa.act_re_procdef">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/416503ed/d1380149-3314-49d1-afe8-347ca3cc617b/micro_enterprise_oa.act_re_deployment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ProcessDefinitionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="112" lean-forward="false" selection-start-line="9" selection-start-column="112" selection-end-line="9" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TemplateMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/PostMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.3.9/mapper-3.3.9.jar!/tk/mybatis/mapper/common/base/select/SelectByPrimaryKeyMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/saveUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/list_treeview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="42" column="79" lean-forward="false" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/DepartmentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Department.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/TemplateMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="92">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/listLevel2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/SecondDepartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DepartmentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-          <folding>
-            <marker date="1513232461838" expanded="true" signature="909:957" ph="SELECT * FRO... department" />
-            <marker date="1513232461838" expanded="true" signature="1080:1283" ph="SELECT c.id department" />
-            <marker date="1513232461838" expanded="true" signature="1355:1417" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/selectUserUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1794">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/UserPostRelative.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="281">
+          <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="38" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/com.wzu:micro_enterprise_oa:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.wzu:micro_enterprise_oa:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.wzu:micro_enterprise_oa:1.0-SNAPSHOT</node>
-            <node x="" y="">com.alibaba:fastjson:jar:1.2.17</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.4.2</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.4.2/com.fasterxml.jackson.core:jackson-annotations:jar:2.4.0</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.4.2/com.fasterxml.jackson.core:jackson-core:jar:2.4.2</node>
-            <node x="" y="">dom4j:dom4j:jar:1.6.1</node>
-            <node x="" y="">dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
-            <node x="" y="">com.github.kevinsawicki:http-request:jar:6.0</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0/org.apache.commons:commons-email:jar:1.4</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0/org.apache.commons:commons-email:jar:1.4/com.sun.mail:javax.mail:jar:1.5.2</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0/org.apache.commons:commons-email:jar:1.4/com.sun.mail:javax.mail:jar:1.5.2/javax.activation:activation:jar:1.1</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0/org.apache.commons:commons-email:jar:1.4/javax.activation:activation:jar:1.1.1</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0/org.springframework:spring-beans:jar:4.1.5.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0/joda-time:joda-time:jar:2.6</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0/org.slf4j:slf4j-api:jar:1.7.6</node>
-            <node x="" y="">org.activiti:activiti-engine:jar:5.21.0/org.slf4j:jcl-over-slf4j:jar:1.7.6</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-context:jar:4.1.5.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-jdbc:jar:4.1.5.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-tx:jar:4.1.5.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-tx:jar:4.1.5.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-tx:jar:4.1.5.RELEASE/org.springframework:spring-core:jar:4.1.5.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-orm:jar:4.1.5.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-orm:jar:4.1.5.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-orm:jar:4.1.5.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/org.springframework:spring-orm:jar:4.1.5.RELEASE/org.springframework:spring-jdbc:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/commons-dbcp:commons-dbcp:jar:1.4</node>
-            <node x="" y="">org.activiti:activiti-spring:jar:5.21.0/commons-dbcp:commons-dbcp:jar:1.4/commons-pool:commons-pool:jar:1.5.4</node>
-            <node x="" y="">org.activiti:activiti-image-generator:jar:5.21.0</node>
-            <node x="" y="">org.activiti:activiti-image-generator:jar:5.21.0/org.activiti:activiti-bpmn-model:jar:5.21.0</node>
-            <node x="" y="">org.activiti:activiti-image-generator:jar:5.21.0/org.activiti:activiti-bpmn-model:jar:5.21.0/com.fasterxml.jackson.core:jackson-databind:jar:2.2.3</node>
-            <node x="" y="">org.activiti:activiti-process-validation:jar:5.21.0</node>
-            <node x="" y="">org.activiti:activiti-bpmn-converter:jar:5.21.0</node>
-            <node x="" y="">org.activiti:activiti-bpmn-converter:jar:5.21.0/joda-time:joda-time:jar:2.5</node>
-            <node x="" y="">joda-time:joda-time:jar:2.5</node>
-            <node x="" y="">org.apache.commons:commons-lang3:jar:3.3.2</node>
-            <node x="" y="">commons-io:commons-io:jar:1.3.2</node>
-            <node x="" y="">commons-net:commons-net:jar:3.3</node>
-            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.3.5</node>
-            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.3.5/org.apache.httpcomponents:httpcore:jar:4.3.2</node>
-            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.3.5/commons-logging:commons-logging:jar:1.1.3</node>
-            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.3.5/commons-codec:commons-codec:jar:1.6</node>
-            <node x="" y="">junit:junit:jar:4.12</node>
-            <node x="" y="">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.7.16</node>
-            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.7.16/org.slf4j:slf4j-api:jar:1.7.16</node>
-            <node x="" y="">org.mybatis:mybatis:jar:3.3.0</node>
-            <node x="" y="">org.mybatis:mybatis-spring:jar:1.2.3</node>
-            <node x="" y="">com.github.miemiedev:mybatis-paginator:jar:1.2.15</node>
-            <node x="" y="">com.github.miemiedev:mybatis-paginator:jar:1.2.15/org.mybatis:mybatis:jar:3.1.0</node>
-            <node x="" y="">com.github.miemiedev:mybatis-paginator:jar:1.2.15/org.slf4j:slf4j-api:jar:1.7.2</node>
-            <node x="" y="">com.github.pagehelper:pagehelper:jar:4.1.1</node>
-            <node x="" y="">com.github.jsqlparser:jsqlparser:jar:0.9.4</node>
-            <node x="" y="">tk.mybatis:mapper:jar:3.3.9</node>
-            <node x="" y="">tk.mybatis:mapper:jar:3.3.9/javax.persistence:persistence-api:jar:1.0</node>
-            <node x="" y="">mysql:mysql-connector-java:jar:5.1.32</node>
-            <node x="" y="">com.alibaba:druid:jar:1.0.28</node>
-            <node x="" y="">com.alibaba:druid:jar:1.0.28/com.alibaba:jconsole:jar:1.8.0</node>
-            <node x="" y="">com.alibaba:druid:jar:1.0.28/com.alibaba:tools:jar:1.8.0</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE/commons-logging:commons-logging:jar:1.2</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-expression:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-beans:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.2.0.RELEASE/org.springframework:spring-web:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-jdbc:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-jdbc:jar:4.2.0.RELEASE/org.springframework:spring-tx:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aspects:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aspects:jar:4.2.0.RELEASE/org.aspectj:aspectjweaver:jar:1.8.6</node>
-            <node x="" y="">org.springframework:spring-context-support:jar:4.2.0.RELEASE</node>
-            <node x="" y="">org.aspectj:aspectjweaver:jar:1.8.5</node>
-            <node x="" y="">jstl:jstl:jar:1.2</node>
-            <node x="" y="">javax.servlet:servlet-api:jar:2.5</node>
-            <node x="" y="">javax.servlet:jsp-api:jar:2.0</node>
-            <node x="" y="">javax.servlet:jsp-api:jar:2.0/javax.servlet:servlet-api:jar:2.4</node>
-            <node x="" y="">commons-fileupload:commons-fileupload:jar:1.3.1</node>
-            <node x="" y="">commons-fileupload:commons-fileupload:jar:1.3.1/commons-io:commons-io:jar:2.2</node>
-            <node x="" y="">log4j:log4j:jar:1.2.17</node>
-            <node x="" y="">org.apache.shiro:shiro-core:jar:1.3.2</node>
-            <node x="" y="">org.apache.shiro:shiro-core:jar:1.3.2/org.slf4j:slf4j-api:jar:1.6.4</node>
-            <node x="" y="">org.apache.shiro:shiro-core:jar:1.3.2/commons-beanutils:commons-beanutils:jar:1.8.3</node>
-            <node x="" y="">org.apache.shiro:shiro-web:jar:1.3.2</node>
-            <node x="" y="">org.apache.shiro:shiro-ehcache:jar:1.3.2</node>
-            <node x="" y="">org.apache.shiro:shiro-ehcache:jar:1.3.2/net.sf.ehcache:ehcache-core:jar:2.5.3</node>
-            <node x="" y="">org.apache.shiro:shiro-spring:jar:1.3.2</node>
-            <node x="" y="">net.sf.ehcache:ehcache-core:jar:2.6.11</node>
-            <node x="" y="">net.sf.ehcache:ehcache-core:jar:2.6.11/org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/aopalliance:aopalliance:jar:1.0</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/com.google.guava:guava:jar:r09</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/org.slf4j:slf4j-api:jar:1.6.2</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/org.springframework:spring-aop:jar:3.0.6.RELEASE</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/org.springframework:spring-beans:jar:3.0.6.RELEASE</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/org.springframework:spring-context:jar:3.0.6.RELEASE</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/org.springframework:spring-core:jar:3.0.6.RELEASE</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/org.springframework:spring-expression:jar:3.0.6.RELEASE</node>
-            <node x="" y="">com.googlecode.ehcache-spring-annotations:ehcache-spring-annotations:jar:1.2.0/net.sf.ehcache:ehcache-core:jar:2.4.5</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7803948264125254" x="1178.0" y="2950.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#2326#2327#0" expanded="false" />
-            <element signature="e#2353#2354#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="57" column="93" lean-forward="false" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="93" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/SystemManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/_show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="45" column="93" lean-forward="false" selection-start-line="45" selection-start-column="93" selection-end-line="45" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemRole/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="74" />
+          <caret line="6" column="74" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/UserPostRelativeMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/TemplateServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserPostRelativeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="419">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
-            <marker date="1513489754172" expanded="true" signature="601:653" ph="DELETE FROM " />
-            <marker date="1513489754172" expanded="true" signature="790:852" ph="SELECT * FRO... user_post_relative" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PersonConfig/editUserInfoUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemDepartment/saveUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1045">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/blue/images/button/addNew.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bottom.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="65" />
+        <state relative-caret-position="-184">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="0" selection-start-column="65" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/tree.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <caret line="14" column="120" lean-forward="false" selection-start-line="14" selection-start-column="110" selection-end-line="14" selection-end-column="120" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/right.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/logout.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="115">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/left.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/script/pageCommon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="86" lean-forward="false" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
+        <state relative-caret-position="185">
+          <caret line="303" column="48" lean-forward="false" selection-start-line="303" selection-start-column="48" selection-end-line="303" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/script/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/script/fckeditor/demo_20091026.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1023,92 +1022,93 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="36" />
+          <caret line="12" column="97" lean-forward="false" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/top.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="24" column="107" lean-forward="false" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="107" />
+        <state relative-caret-position="1242">
+          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/TemplateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/UserControllerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="335">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/SystemManagerServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/SystemManagerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        <state relative-caret-position="-4932">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/SystemManagerService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/ProcessDefinitionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/saveUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3164">
-          <caret line="163" column="9" lean-forward="false" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/PersonConfig/editPasswordUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/script/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-953">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2236">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="97" column="2" lean-forward="false" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="136" column="2" lean-forward="false" selection-start-line="136" selection-start-column="2" selection-end-line="136" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="57" />
+        <state relative-caret-position="-171">
+          <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Template.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="66" column="53" lean-forward="false" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
           <folding>
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

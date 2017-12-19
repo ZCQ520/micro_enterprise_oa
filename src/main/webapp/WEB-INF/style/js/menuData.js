@@ -51,14 +51,14 @@ var privilegeDate = [{
 			isParent:false,
 			icon:'style/images/MenuIcon/manager.gif',
 			target:'right',
-			url:'Flow_ProcessDefinition/list.html',
+			url:'/FlowProcessDefinition/list',
 			name:'审批流程管理'
 		},{
 			id:'32',
 			pid:'3',
 			isParent:false,
 			target:'right',
-			url:'Flow_FormTemplate/list.html',
+			url:'FlowFormTemplate/list',
 			icon:'style/images/MenuIcon/formmodel.gif',
 			name:'表单模板管理'
 		},{
