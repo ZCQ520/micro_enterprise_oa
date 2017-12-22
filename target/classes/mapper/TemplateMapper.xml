@@ -8,6 +8,6 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="pd_key" jdbcType="VARCHAR" property="pdKey" />
-    <result column="doc_file_path" jdbcType="VARCHAR" property="docFilePath" />
+    <result column="doc_file_path" jdbcType="LONGVARCHAR" property="docFilePath" />
   </resultMap>
 </mapper>

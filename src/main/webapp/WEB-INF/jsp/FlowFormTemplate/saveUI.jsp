@@ -39,7 +39,10 @@
                 <table cellpadding="0" cellspacing="0" class="mainForm">
 				   	<tr>
                         <td>模板名称</td>
-                        <td><input type="TEXT" name="name" class="InputStyle" />  *</td>
+                        <td><input type="TEXT" name="name" class="InputStyle" value="${template.name}"/>*
+                        <input type="hidden" name="docFilePath" value="${template.docFilePath}">
+                            <input type="hidden" name="id" value="${template.id}">
+                        </td>
                     </tr>
                     <tr>
                         <td>所用流程</td>
