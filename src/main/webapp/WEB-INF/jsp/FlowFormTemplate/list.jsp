@@ -37,13 +37,13 @@
 
 		<!--显示数据列表-->
         <tbody id="TableData" class="dataContainer" datakey="documentTemplateList">
-        <c:forEach items="${templates}" var="template">
+        <c:forEach items="${templateDTOS}" var="template">
 			<tr class="TableDetail1 template">
-					<td><a href="javascript:void('下载')">${template.name}</a>&nbsp;</td>
-					<td>${template.pdKey}&nbsp;</td>
-					<td><a onClick="return delConfirm()" href="${pageContext.request.contextPath}/FlowFormTemplate/deleteTemplateById?tid=${template.id}">删除</a>
-						<a href="${pageContext.request.contextPath}/FlowFormTemplate/saveUI?tid=${template.id}">修改</a>
-						<a href="${pageContext.request.contextPath}/FlowFormTemplate/download?tid=${template.id}">下载</a>
+					<td><a href="javascript:void('下载')">${template.template.name}</a>&nbsp;</td>
+					<td>${template.processDefinitionName}&nbsp;</td>
+					<td><a onClick="return delConfirm()" href="${pageContext.request.contextPath}/FlowFormTemplate/deleteTemplateById?tid=${template.template.id}">删除</a>
+						<a href="${pageContext.request.contextPath}/FlowFormTemplate/saveUI?tid=${template.template.id}">修改</a>
+						<a href="${pageContext.request.contextPath}/FlowFormTemplate/download?tid=${template.template.id}">下载</a>
 					</td>
 			</tr>
         </c:forEach>

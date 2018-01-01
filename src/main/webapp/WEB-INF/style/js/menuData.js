@@ -66,7 +66,7 @@ var privilegeDate = [{
 			pid:'3',
 			isParent:false,
 			target:'right',
-			url:'Flow_Formflow/formTemplateList.html',
+			url:'FlowFormFlow/formTemplateList',
 			icon:'style/images/MenuIcon/FUNC241000.gif',
 			name:'发起申请'
 		},{
@@ -74,7 +74,7 @@ var privilegeDate = [{
 			pid:'3',
 			isParent:false,
 			target:'right',
-			url:'Flow_Formflow/myTaskList.html',
+			url:'FlowFormFlow/myTaskList',
 			icon:'style/images/MenuIcon/FUNC20029.gif',
 			name:'审批处理'
 		},{
@@ -82,7 +82,7 @@ var privilegeDate = [{
 			pid:'3',
 			target:'right',
 			isParent:false,
-			url:'Flow_FormFlow_Old/mySubmittedList.html',
+			url:'FlowFormFlowOld/mySubmittedList',
 			icon:'style/images/MenuIcon/FUNC20029.gif',
 			name:'查询状态'
 		}

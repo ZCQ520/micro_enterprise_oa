@@ -30,20 +30,19 @@ public class TemplateServiceImpl implements TemplateService {
 
     @Override
     public void saveOrUpdateTemplate(Template template, MultipartFile file) {
-        if (!file.isEmpty()){
-            String docFilePath = template.getDocFilePath();
-            if (docFilePath!=null&&!docFilePath.equals("")){
-                File existFile = new File(docFilePath);
-                if (existFile.exists()){
-                    existFile.delete();
-                }
+        String docFilePath = template.getDocFilePath();
+        if (docFilePath != null && !docFilePath.equals("")) {
+            File existFile = new File(docFilePath);
+            if (existFile.exists()) {
+                existFile.delete();
             }
-            String targetPath = OAFileUtils.saveFile(file);
-            template.setDocFilePath(targetPath);
         }
-        if(template.getId()!=null){
+        String targetPath = OAFileUtils.saveFile(file);
+        template.setDocFilePath(targetPath);
+
+        if (template.getId() != null) {
             templateMapper.updateByPrimaryKey(template);
-        }else {
+        } else {
             templateMapper.insert(template);
         }
     }
@@ -52,9 +51,9 @@ public class TemplateServiceImpl implements TemplateService {
     public void deleteTemplateById(Integer tid) {
         Template template = templateMapper.selectByPrimaryKey(tid);
         String docFilePath = template.getDocFilePath();
-        if (docFilePath!=null&&!docFilePath.equals("")){
+        if (docFilePath != null && !docFilePath.equals("")) {
             File file = new File(docFilePath);
-            if (file.exists()){
+            if (file.exists()) {
                 file.delete();
             }
         }

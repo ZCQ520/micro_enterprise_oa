@@ -1,29 +1,29 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>待我审批</title>
+    <title>经我审批</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script language="javascript" src="../script/jquery.js"></script>
-    <script language="javascript" src="../script/pageCommon.js" charset="utf-8"></script>
-    <script language="javascript" src="../script/PageUtils.js" charset="utf-8"></script>
-    <script language="javascript" src="../script/DemoData.js" charset="utf-8"></script>
-	<script language="javascript" src="../script/DataShowManager.js" charset="utf-8"></script>
-    <link type="text/css" rel="stylesheet" href="../style/blue/pageCommon.css" />
+    <script language="javascript" src="${pageContext.request.contextPath}/script/jquery.js"></script>
+    <script language="javascript" src="${pageContext.request.contextPath}/script/pageCommon.js" charset="utf-8"></script>
+    <script language="javascript" src="${pageContext.request.contextPath}/script/PageUtils.js" charset="utf-8"></script>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/style/blue/pageCommon.css" />
     <script type="text/javascript">
     </script>
 </head>
-<body> 
+<body>
 
 <div id="Title_bar">
     <div id="Title_bar_Head">
         <div id="Title_Head"></div>
         <div id="Title"><!--页面标题-->
-            <img border="0" width="13" height="13" src="../style/images/title_arrow.gif"/> 待我审批
+            <img border="0" width="13" height="13" src="${pageContext.request.contextPath}/style/images/title_arrow.gif"/> 经我审批
         </div>
         <div id="Title_End"></div>
     </div>
 </div>
 
-<!--
+
 <div id="QueryArea">
 	<div style="height: 30px">
 		<form action="#">
@@ -39,37 +39,42 @@
 						<option value="22">加班申请</option>
 					</select>
 				</td>
-				<td><a href=""><input type="IMAGE" src="../style/blue/images/button/query.PNG"/></a></td>
+				<td><select name="status" class="SelectStyle">
+						<option value="">查看全部状态</option>
+						<option value="1">审批中</option>
+						<option value="2">未通过</option>
+						<option value="3">已通过</option>
+					</select>
+				</td>
+				<td><a href=""><input type="IMAGE" src="${pageContext.request.contextPath}/style/blue/images/button/query.PNG"/></a></td>
 			</tr>
 		</table>
-	
 		</form>
 	</div>
 </div>
--->
-<form>
-	<input type="hidden" name="pageNum" value="1" />
-</form>
 
 <div id="MainArea">
     <table cellspacing="0" cellpadding="0" class="TableStyle">
         <!-- 表头-->
         <thead>
             <tr align="CENTER" valign="MIDDLE" id="TableTitle">
-				<td width="250">标题</td>
+				<td width="250">主题</td>
 				<td width="115">申请人</td>
 				<td width="115">申请日期</td>
+				<td width="150">我的意见</td>
+				<td width="100">当前状态</td>
 				<td>相关操作</td>
 			</tr>
 		</thead>		
 		<!--显示数据列表-->
         <tbody id="TableData" class="dataContainer" datakey="formList">
 			<tr class="TableDetail1 template">
-				<td><a href="approveUI.html">${form.title}</a></td>
+				<td><a href="showForm.html">${form.title}</a></td>
 				<td>${form.applicant.name}&nbsp;</td>
 				<td>${form.applyTime}&nbsp;</td>
-				<td><a href="approveUI.html">审批处理</a>
-					<!-- <a href="showForm.html">查看申请信息</a> -->
+				<td>同意</td>
+				<td>${form.status}&nbsp;</td>
+				<td><a href="showForm.html">查看申请信息</a>
 					<a href="approvedHistory.html">查看流转记录</a>
 				</td>
 			</tr>
@@ -89,10 +94,10 @@
 	</div>
 	<div id=PageSelectorSelectorArea>
 		<!--
-		<IMG SRC="../style/blue/images/pageSelector/firstPage2.png"/>
+		<IMG SRC="${pageContext.request.contextPath}/style/blue/images/pageSelector/firstPage2.png"/>
 		-->
 		<a href="javascript:void(0)" title="首页" style="cursor: hand;">
-			<img src="../style/blue/images/pageSelector/firstPage.png"/></a>
+			<img src="${pageContext.request.contextPath}/style/blue/images/pageSelector/firstPage.png"/></a>
 		
 		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">3</span>
 		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">4</span>
@@ -106,9 +111,10 @@
 		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">12</span>
 		
 		<!--
-		<IMG SRC="../style/blue/images/pageSelector/lastPage2.png"/>
+		<IMG SRC="${pageContext.request.contextPath}/style/blue/images/pageSelector/lastPage2.png"/>
 		-->
-		<a href="#" title="尾页" style="cursor: hand;"><img src="../style/blue/images/pageSelector/lastPage.png"/></a>
+		<a href="#" title="尾页" style="cursor: hand;">
+			<img src="${pageContext.request.contextPath}/style/blue/images/pageSelector/lastPage.png"/></a>
 		
 		转到：
 		<input onFocus="this.select();" maxlength="2" class="inputStyle" type="text" value="1" name="currPage" tabindex="0"/>
@@ -116,9 +122,9 @@
 	</div>
 </div>
 
-<div class="Description">
+<div class="description">
 	说明：<br />
-	1，这里列出的所有的表单状态都为"审批中"。
+	1，按申请时间降序排列，第1页看到的是最近的申请。
 </div>
 
 </body>

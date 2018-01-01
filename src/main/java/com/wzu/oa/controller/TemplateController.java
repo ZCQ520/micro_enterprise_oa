@@ -1,5 +1,6 @@
 package com.wzu.oa.controller;
 
+import com.wzu.oa.common.entity.DTO.TemplateDTO;
 import com.wzu.oa.common.entity.Template;
 import com.wzu.oa.common.util.OAFileUtils;
 import com.wzu.oa.service.ProcessDefinitionService;
@@ -18,12 +19,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -65,7 +65,15 @@ public class TemplateController {
     @RequestMapping("/page/FlowFormTemplate/list")
     public String getTemplateList(Model model) {
         List<Template> templates = templateService.findList();
-        model.addAttribute("templates", templates);
+        List<TemplateDTO> templateDTOS = new ArrayList<>();
+        for (Template template : templates) {
+            ProcessDefinition processDefinition = processDefinitionService.findProcessDefinitionByKey(template.getPdKey());
+            TemplateDTO templateDTO = new TemplateDTO();
+            templateDTO.setTemplate(template);
+            templateDTO.setProcessDefinitionName(processDefinition.getName());
+            templateDTOS.add(templateDTO);
+        }
+        model.addAttribute("templateDTOS", templateDTOS);
         return "/FlowFormTemplate/list";
     }
 
@@ -109,10 +117,20 @@ public class TemplateController {
         if (docFilePath != null && !docFilePath.equals("")) {
             File file = new File(docFilePath);
             if (file.exists()) {
-                String fileName = docFilePath;
-                String[] strings = docFilePath.split("\\\\");
-                if (strings != null && strings.length > 1)
-                    fileName = strings[strings.length - 1];
+//                String fileName = docFilePath;
+//                String[] strings = docFilePath.split("\\\\");
+//                if (strings != null && strings.length > 1)
+//                    fileName = strings[strings.length - 1];
+                String suffix = "";
+                String[] strings = docFilePath.split("\\.");
+                if (strings.length>1)
+                    suffix = strings[strings.length-1];
+                String fileName = template.getName()+"."+suffix;
+                try {
+                    fileName = new String(fileName.getBytes("UTF-8"),"ISO-8859-1");
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
                 headers.setContentDispositionFormData("attachment", fileName);
                 try {
                     return new ResponseEntity<byte[]>(FileUtils.readFileToByteArray(file),

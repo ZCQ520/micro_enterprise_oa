@@ -41,6 +41,8 @@ public class PersonConfigController {
     @RequestMapping(value = "/page/PersonConfig/editUserInfoUI")
     public String editUserInfoUI(Model model, HttpSession session) {
         User user = (User) session.getAttribute("user");
+        if (user==null)
+            return "/SystemUser/loginUI";
         Department department = systemManagerService.getDepartmentById(user.getDepartmentId());
         List<Post> posts = systemManagerService.getUserPostsByUserId(user.getId());
         model.addAttribute("department",department);

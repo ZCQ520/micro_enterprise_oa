@@ -26,7 +26,7 @@
 
 <!--显示表单内容-->
 <div id=MainArea>
-    <form method="post" action="${pageContext.request.contextPath}/FlowProcessDefinition/deployProcessDefinition" enctype="multipart/form-data">
+    <form method="post" action="${pageContext.request.contextPath}/FlowProcessDefinition/deployProcessDefinition" enctype="multipart/form-data" onsubmit="return submitProcessDefinitionFile()">
         <div class="ItemBlock_Title1"><!-- 信息说明<DIV CLASS="ItemBlock_Title1">
         	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 部署流程定义 </DIV>  -->
         </div>
@@ -37,7 +37,7 @@
                 <table cellpadding="0" cellspacing="0" class="mainForm">
                     <tr>
 						<td>请选择流程定义文档(zip格式)</td>
-                        <td><input type="file" name="resource" class="InputStyle" style="width:450px;" /> *</td>
+                        <td><input id="processDefinitionFile" type="file" name="resource" class="InputStyle" style="width:450px;" /> *</td>
                     </tr>
                 </table>
             </div>
@@ -54,6 +54,16 @@
 <div class="Description">
 	说明：只接受zip扩展名的文件。
 </div>
+
+<script type="text/javascript">
+    function submitProcessDefinitionFile() {
+        var processDefinitionFile = $("#processDefinitionFile").val();
+        if (processDefinitionFile == null || processDefinitionFile == '') {
+            alert("请选择上传文件");
+            return false;
+        }
+    }
+</script>
 
 </body>
 </html>

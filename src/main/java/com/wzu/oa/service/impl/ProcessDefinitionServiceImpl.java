@@ -67,4 +67,12 @@ public class ProcessDefinitionServiceImpl implements ProcessDefinitionService {
     public InputStream findPngInputStream(String pdId) {
         return processEngine.getRepositoryService().getProcessDiagram(pdId);
     }
+
+    @Override
+    public ProcessDefinition findProcessDefinitionByKey(String pdKey) {
+        ProcessDefinitionQuery query = processEngine.getRepositoryService().createProcessDefinitionQuery();
+        query.processDefinitionKey(pdKey);
+        query.latestVersion();
+        return query.singleResult();
+    }
 }

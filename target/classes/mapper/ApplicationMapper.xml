@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzu.oa.mapper.ApplicationMapper">
+  <resultMap id="BaseResultMap" type="com.wzu.oa.common.entity.Application">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="template_id" jdbcType="INTEGER" property="templateId" />
+    <result column="apply_date" jdbcType="TIMESTAMP" property="applyDate" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="doc_file_path" jdbcType="LONGVARCHAR" property="docFilePath" />
+  </resultMap>
+
+  <select id="getMySubmitList" parameterType="int" resultMap="BaseResultMap">
+    SELECT *
+    FROM application
+    WHERE user_id = #{userId}
+    ORDER BY apply_date DESC
+  </select>
+</mapper>

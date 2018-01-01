@@ -36,4 +36,11 @@ public interface ProcessDefinitionService {
      * @return
      */
     InputStream findPngInputStream(String pdId);
+
+    /**
+     * 根据key获取最新的流程定义
+     * @param pdKey
+     * @return
+     */
+    ProcessDefinition findProcessDefinitionByKey(String pdKey);
 }
