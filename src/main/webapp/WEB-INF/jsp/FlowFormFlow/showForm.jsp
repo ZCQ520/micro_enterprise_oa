@@ -33,7 +33,7 @@
 		<div class="ItemBlock">
 			<table cellpadding="0" cellspacing="0" class="mainForm">
 				<tr>
-					<td><a href="javascript:void(0)" style="text-decoration: underline">[点击下载申请的文档]</a></td>
+					<td><a href="${pageContext.request.contextPath}/FlowFormFlow/download?applicationId=${applicationId}" style="text-decoration: underline">[点击下载申请的文档]</a></td>
 				</tr>
 			</table>
 		</div>

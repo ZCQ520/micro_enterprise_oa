@@ -26,7 +26,7 @@
 
 <!--显示表单内容-->
 <div id=MainArea>
-    <form action="${pageContext.request.contextPath}/FlowFormFlow/submitApplication" enctype="multipart/form-data" method="post">
+    <form action="${pageContext.request.contextPath}/FlowFormFlow/submitApplication" enctype="multipart/form-data" method="post" onsubmit="return submitApplication()">
         <div class="ItemBlock_Title1"><!-- 信息说明 --><div class="ItemBlock_Title1">
         	<img border="0" width="4" height="7" src="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 下载文档模板 </div> 
         </div>
@@ -48,7 +48,7 @@
                 <table cellpadding="0" cellspacing="0" class="mainForm">
                     <tr>
                         <td width="130">请选择填写好的文档</td>
-                        <td><input type="file" name="resource" class="InputStyle" style="width:450px;" /> *
+                        <td><input id="applicationFile" type="file" name="resource" class="InputStyle" style="width:450px;" /> *
                         <input type="hidden" name="templateId" value="${templateId}">
                         </td>
 
@@ -75,4 +75,16 @@
 </div>
 
 </body>
+<script type="text/javascript">
+    function submitApplication() {
+
+
+        var applicationFile = $("#applicationFile").val();
+        if (applicationFile==null||applicationFile == ''){
+            alert("请选择上传文件");
+            return false;
+        }
+
+    }
+</script>
 </html>

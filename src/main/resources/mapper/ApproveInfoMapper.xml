@@ -12,4 +12,11 @@
     <result column="approval" jdbcType="BIT" property="approval" />
     <result column="comment" jdbcType="LONGVARCHAR" property="comment" />
   </resultMap>
+
+  <select id="findListByApplicationId" parameterType="int" resultMap="BaseResultMap">
+    SELECT *
+    FROM approve_info
+    WHERE application_id = #{applicationId}
+    ORDER BY approve_date DESC
+  </select>
 </mapper>

@@ -47,7 +47,9 @@
 
 <!--显示表单内容-->
 <div id=MainArea>
-    <form action="myTaskList.html">
+    <form action="${pageContext.request.contextPath}/FlowFormFlow/approve" method="post">
+        <input type="hidden" name="applicationId" value="${applicationId}">
+        <input type="hidden" name="taskId" value="${taskId}">
 		<div class="ItemBlock_Title1"><!-- 信息说明 --><div class="ItemBlock_Title1">
         	<img border="0" width="4" height="7" src="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 申请信息 </div> 
         </div>
@@ -55,7 +57,7 @@
             <div class="ItemBlock">
                 <table cellpadding="0" cellspacing="0" class="mainForm">
 					<tr>
-						<td><a href="javascript:void(0)" style="text-decoration: underline">[点击下载申请的文档]</a></td>
+						<td><a href="${pageContext.request.contextPath}/FlowFormFlow/download?applicationId=${applicationId}" style="text-decoration: underline">[点击下载申请的文档]</a></td>
 					</tr>
                 </table>
             </div>
@@ -74,12 +76,12 @@
                 </table>
             </div>
         </div>
-		
+		<input type="hidden" id="approval" name="approval" value="true"/>
 		<!-- 表单操作 -->
         <div id="InputDetailBar" style="float:none">
 			<!--onclick事件在submit之前触发-->
 			<input type="image" src="${pageContext.request.contextPath}/style/blue/images/button/agree.png"/>
-			<input type="image" src="${pageContext.request.contextPath}/style/blue/images/button/disagree.png"/>
+			<input onclick="$('#approval').val('false')" type="image" src="${pageContext.request.contextPath}/style/blue/images/button/disagree.png"/>
             <!-- <img src="${pageContext.request.contextPath}/style/blue/images/button/sendBack.png" onClick="selectToNode();" /> -->
             <a href="javascript:history.go(-1);"><img src="${pageContext.request.contextPath}/style/images/goBack.png"/></a>
         </div>

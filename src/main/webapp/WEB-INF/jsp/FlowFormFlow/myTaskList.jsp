@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <title>待我审批</title>
@@ -64,15 +65,17 @@
 		</thead>		
 		<!--显示数据列表-->
         <tbody id="TableData" class="dataContainer" datakey="formList">
+        <c:forEach items="${tasks}" var="taskDTO">
 			<tr class="TableDetail1 template">
-				<td><a href="approveUI.html">${form.title}</a></td>
-				<td>${form.applicant.name}&nbsp;</td>
-				<td>${form.applyTime}&nbsp;</td>
-				<td><a href="approveUI.html">审批处理</a>
+				<td><a href="${pageContext.request.contextPath}/FlowFormFlow/approveUI?applicationId=${taskDTO.application.id}&taskId=${taskDTO.task.id}">${taskDTO.application.title}</a></td>
+				<td>${taskDTO.user.username}&nbsp;</td>
+				<td><fmt:formatDate value="${taskDTO.application.applyDate}" pattern="yyyy-MM-dd HH:mm:ss"/>&nbsp;</td>
+				<td><a href="${pageContext.request.contextPath}/FlowFormFlow/approveUI?applicationId=${taskDTO.application.id}&taskId=${taskDTO.task.id}">审批处理</a>
 					<!-- <a href="showForm.html">查看申请信息</a> -->
-					<a href="approvedHistory.html">查看流转记录</a>
+					<a href="${pageContext.request.contextPath}/FlowFormFlow/approvedHistory?applicationId=${taskDTO.application.id}">查看流转记录</a>
 				</td>
 			</tr>
+        </c:forEach>
         </tbody>
     </table>
     

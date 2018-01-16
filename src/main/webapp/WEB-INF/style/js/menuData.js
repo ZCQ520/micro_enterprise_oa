@@ -30,12 +30,6 @@ var privilegeDate = [{
 			isParent:false,
 			icon:'style/images/MenuIcon/FUNC20056.gif',
 			name:'工作日记'
-		},{
-			id:'25',
-			pid:'2',
-			isParent:false,
-			icon:'style/images/MenuIcon/time_date.gif',
-			name:'通讯录'
 		}
 	]
 }, {
@@ -95,51 +89,6 @@ var privilegeDate = [{
 	url:'LanDisk_Folder/list.html',
 	icon:'style/images/MenuIcon/FUNC20056.gif',
     isParent: false
-},{
-    id: '6',
-    pid: '1',
-    name: '人力资源',
-	icon:'style/images/MenuIcon/FUNC20001.gif',
-    isParent: true,
-	nodes:[
-		{
-			id:'61',
-			pid:'6',
-			isParent: false,
-			icon:'style/images/MenuIcon/FUNC20076.gif',
-			name:'档案管理'
-		},{
-			id:'62',
-			pid:'6',
-			isParent: false,
-			icon:'style/images/MenuIcon/FUNC55000.gif',
-			name:'培训记录'
-		},{
-			id:'63',
-			pid:'6',
-			isParent: false,
-			icon:'style/images/MenuIcon/FUNC55000.gif',
-			name:'奖赏记录'
-		},{
-			id:'64',
-			pid:'6',
-			isParent: false,
-			icon:'style/images/MenuIcon/FUNC55000.gif',
-			name:'职位变更'
-		},{
-			id:'65',
-			pid:'6',
-			isParent: false,
-			icon:'style/images/MenuIcon/FUNC55000.gif',
-			name:'人事合同'
-		},{
-			id:'66',
-			pid:'6',
-			isParent: false,
-			icon:'style/images/MenuIcon/FUNC20001.gif',
-			name:'薪酬制度'
-		}
-	]
 }, {
     id: '9',
     pid: '1',

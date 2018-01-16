@@ -21,4 +21,11 @@ public interface UserService {
      * @return
      */
      User findUserByUsername(String username);
+
+    /**
+     * 根据用户id查询用户信息
+     * @param userId
+     * @return
+     */
+    User getUserById(Integer userId);
 }

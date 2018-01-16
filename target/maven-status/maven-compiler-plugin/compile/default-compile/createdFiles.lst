@@ -1,4 +1,5 @@
 com\wzu\oa\common\entity\ApproveInfo.class
+com\wzu\oa\service\impl\ApproveInfoServiceImpl.class
 com\wzu\oa\controller\SystemManagerController.class
 com\wzu\oa\service\FlowService.class
 com\wzu\oa\service\TemplateService.class
@@ -12,6 +13,7 @@ com\wzu\oa\controller\PageController.class
 com\wzu\oa\controller\FlowController.class
 com\wzu\oa\controller\TemplateController.class
 com\wzu\oa\common\util\ApplicationUtils.class
+com\wzu\oa\common\entity\DTO\ApproveInfoDTO.class
 com\wzu\oa\common\entity\Post.class
 com\wzu\oa\controller\UserControllerImpl.class
 com\wzu\oa\controller\ProcessDefinitionController.class
@@ -26,6 +28,7 @@ com\wzu\oa\common\entity\var\ApplicationVar.class
 com\wzu\oa\mapper\UserMapper.class
 com\wzu\oa\common\entity\DTO\SecondDepartment.class
 com\wzu\oa\mapper\DepartmentMapper.class
+com\wzu\oa\common\entity\DTO\ApplicationDTO.class
 com\wzu\oa\mapper\ApplicationMapper.class
 com\wzu\oa\mapper\UserPostRelativeMapper.class
 com\wzu\oa\common\util\OAFileUtils.class
@@ -35,4 +38,6 @@ com\wzu\oa\common\entity\UserPostRelative.class
 com\wzu\oa\service\impl\ProcessDefinitionServiceImpl.class
 com\wzu\oa\common\entity\DTO\UserDTO.class
 com\wzu\oa\service\SystemManagerService.class
+com\wzu\oa\common\entity\DTO\TaskDTO.class
 com\wzu\oa\common\entity\DTO\TemplateDTO.class
+com\wzu\oa\service\ApproveInfoService.class

@@ -5,61 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2c282c6-cfb0-42fa-a13f-c50a117bfb4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/ApproveInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/TemplateDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/var/ApplicationVar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/util/ApplicationUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/FlowController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApplicationMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApproveInfoMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/FlowService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/FlowServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApproveInfoMapper.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/formTemplateList.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.html.bak" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/activityBPM/qjlc.png" afterPath="$PROJECT_DIR$/target/classes/activityBPM/qjlc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/PersonConfigController.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/PersonConfigController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/TemplateController.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/TemplateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/ProcessDefinitionService.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/ProcessDefinitionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/TemplateServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/TemplateServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormTemplate/list_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormTemplate/list_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormTemplate/saveUI_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormTemplate/saveUI_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowProcessDefinition/deployUI_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowProcessDefinition/deployUI_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/logout_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/logout_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d1380149-3314-49d1-afe8-347ca3cc617b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d1380149-3314-49d1-afe8-347ca3cc617b.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/ApplicationDTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/ApproveInfoDTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/TaskDTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ApproveInfoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ApproveInfoServiceImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowHtmlFormTemplate/list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowHtmlFormTemplate/saveUI.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/common/entity/Application.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/common/entity/Application.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/FlowController.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/controller/FlowController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/mapper/ApplicationMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/mapper/ApplicationMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/mapper/ApproveInfoMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/mapper/ApproveInfoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/FlowService.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/FlowService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/FlowServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/FlowServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/wzu/oa/service/impl/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormFlow/submitUI_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormFlow/submitUI_jsp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormFlowOld/mySubmittedList_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormFlowOld/mySubmittedList_jsp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ProcessDefinitionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ProcessDefinitionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/TemplateServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/TemplateServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.bpmn" afterPath="$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.bpmn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/deployUI.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/deployUI.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/FlowController.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/FlowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApplicationMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApplicationMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApproveInfoMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApproveInfoMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/FlowService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/FlowService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/FlowServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/FlowServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/ApproveInfoMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ApproveInfoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approvedHistory.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approvedHistory.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bottom.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bottom.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/activityBPM/qjlc.bpmn" afterPath="$PROJECT_DIR$/target/classes/activityBPM/qjlc.bpmn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/ApplicationMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/ApplicationMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/ApproveInfoMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/ApproveInfoMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormTemplate/list_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormTemplate/list_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormTemplate/saveUI_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormTemplate/saveUI_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowProcessDefinition/deployUI_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowProcessDefinition/deployUI_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/logout_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/SystemUser/logout_jsp.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approvedHistory.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approvedHistory.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/editAndResubmitUI.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/editAndResubmitUI.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/formTemplateList.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/formTemplateList.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myApprovedList.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myApprovedList.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/selectToNodeUI.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/selectToNodeUI.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/selectTransitionUI.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/selectTransitionUI.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormFlow/submitUI_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormFlow/submitUI_jsp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormFlowOld/mySubmittedList_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/FlowFormFlowOld/mySubmittedList_jsp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,106 +79,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FlowController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/FlowController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="85" column="58" lean-forward="false" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mySubmittedList.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="95" column="48" lean-forward="true" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationVar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/var/ApplicationVar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlowService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/FlowService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qjlc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlowServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/FlowServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-              <folding>
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#1805#1806#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/util/ApplicationUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserControllerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/UserControllerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="47" column="38" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -245,32 +133,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/saveApproveProcessUI.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/saveProcessNodeUI.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/ProcessDefinitionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/TemplateMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/logout.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/menu.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/script/pageCommon.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/UserControllerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/util/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TemplateMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/TemplateService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approvedHistory.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/editAndResubmitUI.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myApprovedList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/selectToNodeUI.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/selectTransitionUI.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/ApproveInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApproveInfoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/formTemplateList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/deployUI.jsp" />
@@ -285,17 +158,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/util/ApplicationUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/var/ApplicationVar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/TaskDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApproveInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ApproveInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/ApproveInfoDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ApproveInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ApproveInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approvedHistory.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/ApplicationDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bottom.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/FlowService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApplicationMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/FlowServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/var/ApplicationVar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/FlowController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml" />
       </list>
     </option>
   </component>
@@ -331,7 +219,7 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -352,9 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -416,7 +301,7 @@
               <item name="oa" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="var" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
@@ -426,7 +311,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="oa" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro_enterprise_oa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro_enterprise_oa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oa" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
@@ -475,12 +380,44 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="FlowFormFlow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro_enterprise_oa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="FlowFormFlowOld" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro_enterprise_oa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="micro_enterprise_oa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="micro_enterprise_oa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -496,24 +433,24 @@
     <property name="last.edited.regexp" value="Sample Text" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\geetion\micro_enterprise_oa\src\main\webapp\WEB-INF\jsp" />
-      <recent name="E:\geetion\micro_enterprise_oa\src\main\webapp\WEB-INF" />
-      <recent name="E:\geetion\micro_enterprise_oa\src\main\java\com\wzu\oa\common" />
-      <recent name="E:\geetion\micro_enterprise_oa\src\main\resources" />
-      <recent name="E:\geetion\micro_enterprise_oa\src\main\resources\mybatis" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wzu.oa.common.entity" />
-      <recent name="com.wzu.oa.mapper" />
-      <recent name="com.wzu.oa.common.config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\geetion\micro_enterprise_oa\src\main\resources\activityBPM" />
       <recent name="E:\geetion\micro_enterprise_oa\src\main\resources" />
       <recent name="E:\geetion\micro_enterprise_oa\src\main\resources\mapper" />
       <recent name="E:\geetion\micro_enterprise_oa\src\main\java\com\wzu\oa\mapper" />
       <recent name="E:\geetion\micro_enterprise_oa\src\main\java\com\wzu\oa\common\entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wzu.oa.common.entity" />
+      <recent name="com.wzu.oa.mapper" />
+      <recent name="com.wzu.oa.common.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\geetion\micro_enterprise_oa\src\main\webapp\WEB-INF\jsp" />
+      <recent name="E:\geetion\micro_enterprise_oa\src\main\webapp\WEB-INF" />
+      <recent name="E:\geetion\micro_enterprise_oa\src\main\java\com\wzu\oa\common" />
+      <recent name="E:\geetion\micro_enterprise_oa\src\main\resources" />
+      <recent name="E:\geetion\micro_enterprise_oa\src\main\resources\mybatis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -658,11 +595,14 @@
       <workItem from="1514530229922" duration="7770000" />
       <workItem from="1514542658487" duration="1182000" />
       <workItem from="1514597934510" duration="7042000" />
+      <workItem from="1514958134588" duration="4779000" />
+      <workItem from="1515027410895" duration="1359000" />
+      <workItem from="1516067915775" duration="17871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184267000" />
+    <option name="totallyTimeSpent" value="208276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -674,7 +614,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -683,14 +623,14 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5660377" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761577" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22844176" sideWeight="0.4871355" order="7" side_tool="false" content_ui="combo" x="529" y="72" width="308" height="583" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19667171" sideWeight="0.4871355" order="7" side_tool="false" content_ui="combo" x="529" y="72" width="308" height="583" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23827533" sideWeight="0.5128645" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20574887" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -767,8 +707,14 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -777,214 +723,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/selectToNodeUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1227">
-          <caret line="56" column="94" lean-forward="false" selection-start-line="56" selection-start-column="94" selection-end-line="56" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="43" column="90" lean-forward="false" selection-start-line="43" selection-start-column="90" selection-end-line="43" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/selectTransitionUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowHtmlFormTemplate/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApproveInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/ProcessDefinitionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="91" column="12" lean-forward="false" selection-start-line="91" selection-start-column="12" selection-end-line="94" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Template.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="46" column="18" lean-forward="false" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-          <folding>
-            <element signature="e#722#723#0" expanded="false" />
-            <element signature="e#749#750#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/SystemUser/saveUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="151" column="60" lean-forward="false" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/deployUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/bxlc.bpmn" />
-    <entry file="das://table:/416503ed/d1380149-3314-49d1-afe8-347ca3cc617b/micro_enterprise_oa.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/416503ed/d1380149-3314-49d1-afe8-347ca3cc617b/micro_enterprise_oa.user_post_relative">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/416503ed/d1380149-3314-49d1-afe8-347ca3cc617b/micro_enterprise_oa.post">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/416503ed/d1380149-3314-49d1-afe8-347ca3cc617b/micro_enterprise_oa.department">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.bpmn">
-      <provider selected="true" editor-type-id="bpmn-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="uml://BPMN_2_0/flowPath=E:/geetion/micro_enterprise_oa/src/main/resources/activityBPM/qjlc.xml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>BPMN_2_0</ID>
-          <OriginalElement>flowPath=E:/geetion/micro_enterprise_oa/src/main/resources/activityBPM/qjlc.xml</OriginalElement>
-          <nodes>
-            <node x="" y="">interface com.intellij.jboss.jbpm.model.xml.bpmn20.TStartEvent @26460</node>
-            <node x="" y="">interface com.intellij.jboss.jbpm.model.xml.bpmn20.TUserTask @26473</node>
-            <node x="" y="">interface com.intellij.jboss.jbpm.model.xml.bpmn20.TUserTask @26468</node>
-            <node x="" y="">interface com.intellij.jboss.jbpm.model.xml.bpmn20.TUserTask @26463</node>
-            <node x="" y="">interface com.intellij.jboss.jbpm.model.xml.bpmn20.TEndEvent @26478</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="57.0" y="163.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Details</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.bpmn">
-      <provider editor-type-id="bpmn-editor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="68" lean-forward="false" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/qjlc1.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/util/OAFileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/416503ed/d1380149-3314-49d1-afe8-347ca3cc617b/micro_enterprise_oa.application">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/416503ed/d1380149-3314-49d1-afe8-347ca3cc617b/micro_enterprise_oa.template">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/TemplateDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="50" column="97" lean-forward="false" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0.jar!/org/activiti/engine/repository/ProcessDefinitionQuery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="43" column="27" lean-forward="false" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/repository/ProcessDefinitionQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="114" column="25" lean-forward="false" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ProcessDefinitionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ProcessDefinitionService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -996,34 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="43" column="158" lean-forward="false" selection-start-line="43" selection-start-column="158" selection-end-line="43" selection-end-column="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="67" column="59" lean-forward="true" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/TemplateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/TemplateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1201">
-          <caret line="83" column="94" lean-forward="false" selection-start-line="83" selection-start-column="94" selection-end-line="83" selection-end-column="94" />
         </state>
       </provider>
     </entry>
@@ -1039,33 +749,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApplicationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/UserControllerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="47" column="38" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="84" column="48" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,6 +760,233 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.xml">
+      <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="36" column="45" lean-forward="false" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/util/ApplicationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormTemplate/saveUI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="104" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/PersonConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/TemplateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/TemplateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding>
+            <element signature="e#1916#1917#0" expanded="false" />
+            <element signature="e#1977#1978#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/TemplateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="112" column="50" lean-forward="false" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/submitUI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="82" column="50" lean-forward="false" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowProcessDefinition/processimage.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApproveInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="67" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/ApproveInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/task/TaskInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/task/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/TaskDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.3.9/mapper-3.3.9.jar!/tk/mybatis/mapper/common/base/update/UpdateByPrimaryKeyMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/var/ApplicationVar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/ApproveInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DepartmentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513232461838" expanded="true" signature="909:957" ph="SELECT * FRO... department" />
+            <marker date="1513232461838" expanded="true" signature="1080:1283" ph="SELECT c.id department" />
+            <marker date="1513232461838" expanded="true" signature="1355:1417" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TemplateMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ApproveInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <marker date="1516073778042" expanded="true" signature="870:975" ph="SELECT * FRO... approve_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1085,84 +999,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activityBPM/qjlc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/util/ApplicationUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/UserPostRelative.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/var/ApplicationVar.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/ApproveInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/FlowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="85" column="58" lean-forward="false" selection-start-line="85" selection-start-column="58" selection-end-line="85" selection-end-column="58" />
+        <state relative-caret-position="441">
+          <caret line="80" column="9" lean-forward="true" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/FlowService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approvedHistory.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="-148">
+          <caret line="47" column="82" lean-forward="false" selection-start-line="47" selection-start-column="82" selection-end-line="47" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/privilegeData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2024">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/style/js/menuData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/showForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="120" lean-forward="false" selection-start-line="35" selection-start-column="120" selection-end-line="35" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/approveUI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bottom.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlow/myTaskList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="74" column="132" lean-forward="true" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/common/entity/DTO/ApplicationDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/mapper/ApplicationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="31" column="72" lean-forward="false" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ApplicationMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+        <state relative-caret-position="253">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
-            <marker date="1514623343725" expanded="true" signature="928:1016" ph="SELECT * FRO... application" />
+            <marker date="1516087363807" expanded="true" signature="924:1012" ph="SELECT * FRO... application" />
+            <marker date="1516087363807" expanded="true" signature="1101:1162" ph="SELECT * FRO... application" />
+            <marker date="1516087363807" expanded="true" signature="1271:1331" ph="SELECT * FRO... application" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/impl/FlowServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="529">
+          <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FlowFormFlowOld/mySubmittedList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/service/FlowService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="95" column="48" lean-forward="true" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
+        <state relative-caret-position="924">
+          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wzu/oa/controller/FlowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="131" column="40" lean-forward="true" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
           <folding />
         </state>
       </provider>

@@ -29,11 +29,11 @@
 
 <div id="QueryArea">
     <div style="height: 30px">
-        <form action="#">
+        <form action="${pageContext.request.contextPath}/FlowFormFlowOld/queryApplication" method="post" >
             <table border=0 cellspacing=3 cellpadding=5>
                 <tr>
                     <td>按条件查询：</td>
-                    <td><select name="formTemplateId" class="SelectStyle">
+                    <td><select name="templateId" class="SelectStyle">
                         <option value="">查看全部模板</option>
                         <c:forEach items="${templates}" var="tempalte">
                             <option value="${tempalte.id}">${tempalte.name}</option>
@@ -42,13 +42,12 @@
                     </td>
                     <td><select name="status" class="SelectStyle">
                         <option value="">查看全部状态</option>
-                        <option value="STATUS_APPROVING">审批中</option>
-                        <option value="STATUS_UNAPPROVED">未通过</option>
-                        <option value="STATUS_APPROVED">已通过</option>
+                        <option value="审批中">审批中</option>
+                        <option value="未通过">未通过</option>
+                        <option value="已通过">已通过</option>
                     </select>
                     </td>
-                    <td><a href=""><input type="IMAGE"
-                                          src="${pageContext.request.contextPath}/style/blue/images/button/query.PNG"/></a>
+                    <td><input type="IMAGE" src="${pageContext.request.contextPath}/style/blue/images/button/query.PNG"/>
                     </td>
                 </tr>
             </table>
@@ -90,14 +89,15 @@
         <!--显示数据列表：正在审批或审批完成的表单显示示例-->
         <tbody id="TableData" class="dataContainer" datakey="formList">
         <!-- 正在审批或审批完成的表单显示示例 -->
-        <c:forEach  items="${applications}" var="application">
+        <c:forEach  items="${applicationDTOS}" var="applicationDTO">
         <tr class="TableDetail1 template">
-            <td><a href="${pageContext.request.contextPath}/Flow_Formflow/showForm.html">${application.title}</a></td>
-            <td>${application.userId}&nbsp;</td>
-            <td><fmt:formatDate value="${application.applyDate}" pattern="yyyy-MM-dd HH:mm:ss"/>&nbsp;</td>
-            <td>${application.status}&nbsp;</td>
-            <td><a href="${pageContext.request.contextPath}/Flow_Formflow/showForm.html">查看申请信息</a>
-                <a href="${pageContext.request.contextPath}/Flow_Formflow/approvedHistory.html">查看流转记录</a>
+            <td><a href="${pageContext.request.contextPath}/FlowFormFlow/showForm?applicationId=${applicationDTO.application.id}">${applicationDTO.application.title}</a></td>
+            <td>${applicationDTO.user.username}&nbsp;</td>
+            <td><fmt:formatDate value="${applicationDTO.application.applyDate}" pattern="yyyy-MM-dd HH:mm:ss"/>&nbsp;</td>
+            <td>${applicationDTO.application.status}&nbsp;</td>
+            <td><a href="${pageContext.request.contextPath}/FlowFormFlow/showForm?applicationId=${applicationDTO.application.id}">查看申请信息</a>
+                <a href="${pageContext.request.contextPath}/FloFwFormFlow/approvedHistory?applicationId=${applicationDTO.application.id}">查看流转记录</a>
+                    ${pageContext.request.contextPath}
             </td>
         </tr>
         </c:forEach>
