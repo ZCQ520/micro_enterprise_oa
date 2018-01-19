@@ -7,8 +7,6 @@
 	<SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/jquery.js"></SCRIPT>
     <SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/pageCommon.js" CHARSET="utf-8"></SCRIPT>
     <SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/PageUtils.js" CHARSET="utf-8"></SCRIPT>
-    <SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/DemoData.js" CHARSET="utf-8"></SCRIPT>
-	<SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/DataShowManager.js" CHARSET="utf-8"></SCRIPT>
     <LINK TYPE="text/css" REL="stylesheet" HREF="${pageContext.request.contextPath}/style/blue/pageCommon.css" />
     <SCRIPT TYPE="text/javascript">
     </SCRIPT>
@@ -39,10 +37,7 @@
                 <TABLE CELLPADDING="0" CELLSPACING="0" CLASS="mainForm">
                     <TR>
                         <TD WIDTH="100">文件信息</TD>
-                        <TD><SPAN ID="oldFileInfo">
-								使用手册.doc （1.5K）
-							</SPAN>
-						</TD>
+                        <TD><INPUT TYPE="file" NAME="resource" CLASS="InputStyle" STYLE="width: 400px;"/></TD>
                     </TR>
                     <TR>
                         <TD>文件描述</TD>
@@ -65,6 +60,8 @@
 </DIV>
 
 <DIV CLASS="Description">
+	说明：<BR />
+	1，选择的文件的名称，就是这个文件的显示名称，注意不要与本文件夹中已有的文件重名。<BR />
 </DIV>
 
 </BODY>

@@ -2,13 +2,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <HTML>
 <HEAD>
-<TITLE>文件属性</TITLE>
+<TITLE>文件夹重命名</TITLE>
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
 	<SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/jquery.js"></SCRIPT>
     <SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/pageCommon.js" CHARSET="utf-8"></SCRIPT>
     <SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/PageUtils.js" CHARSET="utf-8"></SCRIPT>
-    <SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/DemoData.js" CHARSET="utf-8"></SCRIPT>
-	<SCRIPT LANGUAGE="javascript" SRC="${pageContext.request.contextPath}/script/DataShowManager.js" CHARSET="utf-8"></SCRIPT>
     <LINK TYPE="text/css" REL="stylesheet" HREF="${pageContext.request.contextPath}/style/blue/pageCommon.css" />
     <SCRIPT TYPE="text/javascript">
     </SCRIPT>
@@ -20,7 +18,7 @@
     <DIV ID="Title_bar_Head">
         <DIV ID="Title_Head"></DIV>
         <DIV ID="Title"><!--页面标题-->
-            <IMG BORDER="0" WIDTH="13" HEIGHT="13" SRC="${pageContext.request.contextPath}/style/images/title_arrow.gif"/> 文件属性
+            <IMG BORDER="0" WIDTH="13" HEIGHT="13" SRC="${pageContext.request.contextPath}/style/images/title_arrow.gif"/> 文件夹重命名
         </DIV>
         <DIV ID="Title_End"></DIV>
     </DIV>
@@ -28,27 +26,30 @@
 
 <!--显示表单内容-->
 <DIV ID=MainArea>
-    <FORM ACTION="${pageContext.request.contextPath}/LanDisk_Folder/list.html">
+    <FORM ACTION="list.html">
         <DIV CLASS="ItemBlock_Title1"><!-- 信息说明<DIV CLASS="ItemBlock_Title1">
-        	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 文件属性</DIV>  -->
+        	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 文件夹重命名</DIV>  -->
         </DIV>
         
         <!-- 表单内容显示 -->
         <DIV CLASS="ItemBlockBorder">
             <DIV CLASS="ItemBlock">
                 <TABLE CELLPADDING="0" CELLSPACING="0" CLASS="mainForm">
-                    <TR>
-                        <TD WIDTH="100">文件信息</TD>
-                        <TD><INPUT TYPE="file" NAME="resource" CLASS="InputStyle" STYLE="width: 400px;"/></TD>
-                    </TR>
-                    <TR>
-                        <TD>文件描述</TD>
-                        <TD><TEXTAREA NAME="description" CLASS="TextareaStyle"></TEXTAREA></TD>
-                    </TR>
-					<TR>
-                        <TD>所属文件夹</TD>
-                        <TD><INPUT TYPE="TEXT" NAME="parentId" READONLY VALUE="/OA文档/" CLASS="InputStyle" /></TD>
-                    </TR>
+                    <TR HEIGHT="50">
+						<TD WIDTH="150">
+							<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" />
+							原文件夹名称
+						</TD>
+						<TD>OA使用指说明</TD>
+					</TR>
+					<TR HEIGHT="25">
+						<TD WIDTH="150">
+							<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" />
+							新文件夹名称
+						</TD>
+						<TD><INPUT TYPE="text" NAME="name" CLASS="InputStyle" /> *</TD>
+						<TD></TD>
+					</TR>
                 </TABLE>
             </DIV>
         </DIV>
@@ -63,7 +64,7 @@
 
 <DIV CLASS="Description">
 	说明：<BR />
-	1，选择的文件的名称，就是这个文件的显示名称，注意不要与本文件夹中已有的文件重名。<BR />
+	1，新的文件夹名称，注意不要与本文件夹中已有的文件夹重名。
 </DIV>
 
 </BODY>

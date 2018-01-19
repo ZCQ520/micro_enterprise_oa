@@ -7,8 +7,6 @@
 	<SCRIPT LANGUAGE="javascript" SRC=${pageContext.request.contextPath}/script/jquery.js"></SCRIPT>
     <SCRIPT LANGUAGE="javascript" SRC=${pageContext.request.contextPath}/script/pageCommon.js" CHARSET="utf-8"></SCRIPT>
     <SCRIPT LANGUAGE="javascript" SRC=${pageContext.request.contextPath}/script/PageUtils.js" CHARSET="utf-8"></SCRIPT>
-    <SCRIPT LANGUAGE="javascript" SRC=${pageContext.request.contextPath}/script/DemoData.js" CHARSET="utf-8"></SCRIPT>
-	<SCRIPT LANGUAGE="javascript" SRC=${pageContext.request.contextPath}/script/DataShowManager.js" CHARSET="utf-8"></SCRIPT>
     <LINK TYPE="text/css" REL="stylesheet" HREF=${pageContext.request.contextPath}/style/blue/pageCommon.css" />
 	
 	<SCRIPT LANGUAGE="javascript" SRC=${pageContext.request.contextPath}/script/jquery_treeview/jquery.treeview.js"></SCRIPT>

@@ -86,7 +86,7 @@ var privilegeDate = [{
     pid: '1',
     name: '知识管理',
 	target:'right',
-	url:'LanDisk_Folder/list.html',
+	url:'LanDiskFolder/list',
 	icon:'style/images/MenuIcon/FUNC20056.gif',
     isParent: false
 }, {
