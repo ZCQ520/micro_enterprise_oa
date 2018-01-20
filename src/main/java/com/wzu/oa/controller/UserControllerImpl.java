@@ -43,7 +43,8 @@ public class UserControllerImpl {
         try {
             UsernamePasswordToken token = new UsernamePasswordToken(account, password);
             Subject subject = SecurityUtils.getSubject();
-            subject.login(token);//验证角色和权限
+            subject.login(token);
+            //验证角色和权限
             User user = (User) subject.getPrincipal();
             session.setAttribute("user",user);
         } catch (Exception ex) {

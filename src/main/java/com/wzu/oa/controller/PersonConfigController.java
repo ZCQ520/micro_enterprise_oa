@@ -4,6 +4,7 @@ import com.wzu.oa.common.entity.Department;
 import com.wzu.oa.common.entity.Post;
 import com.wzu.oa.common.entity.User;
 import com.wzu.oa.service.SystemManagerService;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +28,7 @@ public class PersonConfigController {
      * @param model
      * @return
      */
+    @RequiresPermissions("密码修改")
     @RequestMapping(value = "/page/PersonConfig/editPasswordUI")
     public String editPasswordUI(Model model) {
         return "/PersonConfig/editPasswordUI";

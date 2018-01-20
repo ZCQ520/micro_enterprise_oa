@@ -72,7 +72,7 @@
     <div class="ItemBlock_Title1" id="userTitle" style="display: none;"><!-- 信息说明 -->
         <div class="ItemBlock_Title1">
             <img border="0" width="4" height="7"
-                 src="${pageContext.request.contextPath}/style/blue/images/item_point.gif"/>用户:ww
+                 src="${pageContext.request.contextPath}/style/blue/images/item_point.gif"/>用户:${sessionScope.get("user").username}
             <div id="userImage"></div>
         </div>
         <div class="ItemBlock_Title1" id="privilegeTitle" style="display: none;">

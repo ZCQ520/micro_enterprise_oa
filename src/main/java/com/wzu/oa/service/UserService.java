@@ -1,7 +1,10 @@
 package com.wzu.oa.service;
 
 
+import com.wzu.oa.common.entity.Resource;
 import com.wzu.oa.common.entity.User;
+
+import java.util.List;
 
 /**
  * @author jack
@@ -28,4 +31,11 @@ public interface UserService {
      * @return
      */
     User getUserById(Integer userId);
+
+    /**
+     * 根据用户id查看用户资源
+     * @param userId
+     * @return
+     */
+    List<Resource> getResourcesListByUserId(Integer userId);
 }

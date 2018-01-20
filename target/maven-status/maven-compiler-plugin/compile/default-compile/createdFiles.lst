@@ -7,6 +7,7 @@ com\wzu\oa\service\impl\TemplateServiceImpl.class
 com\wzu\oa\service\ProcessDefinitionService.class
 com\wzu\oa\common\entity\Department.class
 com\wzu\oa\common\entity\Application.class
+com\wzu\oa\common\util\ListUtils.class
 com\wzu\oa\controller\PersonConfigController.class
 com\wzu\oa\service\UserService.class
 com\wzu\oa\controller\PageController.class
@@ -31,6 +32,7 @@ com\wzu\oa\mapper\PostMapper.class
 com\wzu\oa\common\util\MapUtils.class
 com\wzu\oa\mapper\TemplateMapper.class
 com\wzu\oa\mapper\ApproveInfoMapper.class
+com\wzu\oa\common\entity\Resource.class
 com\wzu\oa\common\entity\var\ApplicationVar.class
 com\wzu\oa\mapper\UserMapper.class
 com\wzu\oa\common\entity\DTO\SecondDepartment.class
@@ -48,5 +50,6 @@ com\wzu\oa\mapper\KynamicMapper.class
 com\wzu\oa\service\SystemManagerService.class
 com\wzu\oa\common\entity\DTO\TaskDTO.class
 com\wzu\oa\common\entity\DTO\TemplateDTO.class
+com\wzu\oa\mapper\ResourceMapper.class
 com\wzu\oa\service\ApproveInfoService.class
 com\wzu\oa\service\KynamicService.class

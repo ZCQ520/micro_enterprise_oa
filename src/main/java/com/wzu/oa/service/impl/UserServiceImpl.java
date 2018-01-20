@@ -2,6 +2,7 @@ package com.wzu.oa.service.impl;
 
 
 import com.wzu.oa.common.entity.User;
+import com.wzu.oa.mapper.ResourceMapper;
 import com.wzu.oa.mapper.UserMapper;
 import com.wzu.oa.service.UserService;
 import org.apache.ibatis.session.RowBounds;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author jack
@@ -20,6 +22,9 @@ public class UserServiceImpl implements UserService {
 
     @Resource
     private UserMapper userMapper;
+
+    @Resource
+    private ResourceMapper resourceMapper;
 
     @Override
     public void addUser(User user) {
@@ -36,5 +41,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUserById(Integer userId) {
         return userMapper.selectByPrimaryKey(userId);
+    }
+
+    @Override
+    public List<com.wzu.oa.common.entity.Resource> getResourcesListByUserId(Integer userId) {
+        return resourceMapper.getResourcesListByUserId(userId);
     }
 }
