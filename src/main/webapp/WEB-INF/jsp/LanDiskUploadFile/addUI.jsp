@@ -26,7 +26,7 @@
 
 <!--显示表单内容-->
 <DIV ID=MainArea>
-    <FORM ACTION="${pageContext.request.contextPath}/LanDisk_Folder/list.html">
+    <FORM ACTION="${pageContext.request.contextPath}/LanDiskFolder/uploadFile" enctype="multipart/form-data" onsubmit="return submitFile()" method="post">
         <DIV CLASS="ItemBlock_Title1"><!-- 信息说明<DIV CLASS="ItemBlock_Title1">
         	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 文件属性</DIV>  -->
         </DIV>
@@ -37,7 +37,7 @@
                 <TABLE CELLPADDING="0" CELLSPACING="0" CLASS="mainForm">
                     <TR>
                         <TD WIDTH="100">文件信息</TD>
-                        <TD><INPUT TYPE="file" NAME="resource" CLASS="InputStyle" STYLE="width: 400px;"/></TD>
+                        <TD><INPUT TYPE="file" id="file" NAME="resource" CLASS="InputStyle" STYLE="width: 400px;"/></TD>
                     </TR>
                     <TR>
                         <TD>文件描述</TD>
@@ -45,7 +45,9 @@
                     </TR>
 					<TR>
                         <TD>所属文件夹</TD>
-                        <TD><INPUT TYPE="TEXT" NAME="parentId" READONLY VALUE="/OA文档/" CLASS="InputStyle" /></TD>
+                        <TD>
+                            <input type="hidden" name="pid" value="${pid}">
+                            <INPUT TYPE="TEXT" NAME="parentId" READONLY VALUE="${currentPath}" CLASS="InputStyle" /></TD>
                     </TR>
                 </TABLE>
             </DIV>
@@ -63,6 +65,19 @@
 	说明：<BR />
 	1，选择的文件的名称，就是这个文件的显示名称，注意不要与本文件夹中已有的文件重名。<BR />
 </DIV>
+
+<script type="text/javascript">
+    function submitFile() {
+
+
+        var file = $("#file").val();
+        if (file==null||file == ''){
+            alert("请选择上传文件");
+            return false;
+        }
+
+    }
+</script>
 
 </BODY>
 </HTML>

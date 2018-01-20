@@ -1,5 +1,4 @@
 com\wzu\oa\common\entity\ApproveInfo.class
-com\wzu\oa\mapper\VersionMapper.class
 com\wzu\oa\service\impl\ApproveInfoServiceImpl.class
 com\wzu\oa\controller\SystemManagerController.class
 com\wzu\oa\service\FlowService.class
@@ -15,6 +14,7 @@ com\wzu\oa\common\util\StringUtils.class
 com\wzu\oa\controller\FlowController.class
 com\wzu\oa\controller\TemplateController.class
 com\wzu\oa\common\util\ApplicationUtils.class
+com\wzu\oa\common\entity\DTO\KynamicDTO.class
 com\wzu\oa\common\entity\DTO\ApproveInfoDTO.class
 com\wzu\oa\controller\KynamicController.class
 com\wzu\oa\common\entity\Kynamic.class
@@ -22,7 +22,6 @@ com\wzu\oa\common\entity\Post.class
 com\wzu\oa\controller\UserControllerImpl.class
 com\wzu\oa\controller\ProcessDefinitionController.class
 com\wzu\oa\service\impl\SystemManagerServiceImpl.class
-com\wzu\oa\service\VersionService.class
 com\wzu\oa\common\shiro\UserRealm.class
 com\wzu\oa\service\impl\KynamicServiceImpl.class
 com\wzu\oa\common\util\BeanUtil.class
@@ -45,11 +44,9 @@ com\wzu\oa\common\entity\User.class
 com\wzu\oa\common\entity\UserPostRelative.class
 com\wzu\oa\service\impl\ProcessDefinitionServiceImpl.class
 com\wzu\oa\common\entity\DTO\UserDTO.class
-com\wzu\oa\common\entity\Version.class
 com\wzu\oa\mapper\KynamicMapper.class
 com\wzu\oa\service\SystemManagerService.class
 com\wzu\oa\common\entity\DTO\TaskDTO.class
 com\wzu\oa\common\entity\DTO\TemplateDTO.class
-com\wzu\oa\service\impl\VersionServiceImpl.class
 com\wzu\oa\service\ApproveInfoService.class
 com\wzu\oa\service\KynamicService.class

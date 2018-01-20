@@ -26,7 +26,7 @@
 
 <!--显示表单内容-->
 <div id=MainArea>
-    <form action="list.html">
+    <form action="${pageContext.request.contextPath}/LanDiskFolder/addOrUpdateFolder" onsubmit="return submitFolder()">
         <div class="ItemBlock_Title1"><!-- 信息说明<DIV CLASS="ItemBlock_Title1">
         	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 文件夹属性</DIV>  -->
         </div>
@@ -37,15 +37,20 @@
                 <table cellpadding="0" cellspacing="0" class="mainForm">
                     <tr>
                         <td width="100">文件夹名称</td>
-                        <td><input type="text" name="name" class="InputStyle" /> *</td>
+                        <td>
+                            <input type="text" name="name" id="name" class="InputStyle"  value="${kynamic.name}"/> *
+                        </td>
                     </tr>
                     <tr>
                         <td>文件夹描述</td>
-                        <td><textarea name="description" class="TextareaStyle"></textarea></td>
+                        <td><textarea name="description" class="TextareaStyle">${kynamic.description}</textarea></td>
                     </tr>
 					<tr>
                         <td>上级文件夹</td>
-                        <td><input type="TEXT" name="parentId" readonly value="/OA文档/" class="InputStyle" /></td>
+                        <td>
+                            <input type="hidden" name="id" value="${kynamic.id}">
+                            <input type="hidden" name="pid" value="${pid}">
+                            <input type="TEXT" name="parentId" readonly value="${currentPath}" class="InputStyle" /></td>
                     </tr>
                 </table>
             </div>
@@ -63,6 +68,17 @@
 	说明：<br />
 	1，文件夹的名称，注意不要与本文件夹中已有的文件夹重名。
 </div>
+<script type="text/javascript">
+    function submitFolder() {
 
+        var name = $("#name").val();
+        if (name.trim()==null||name.trim().length==0){
+            alert("请输入文件夹名称");
+            return false;
+        }
+
+
+    }
+</script>
 </body>
 </html>

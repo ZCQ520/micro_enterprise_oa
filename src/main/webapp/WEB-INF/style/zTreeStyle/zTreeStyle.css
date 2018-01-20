@@ -24,7 +24,7 @@ website:	http://code.google.com/p/jquerytree/
 	white-space:nowrap;
 	}
 
-.tree li ul{ margin:0; padding:0 0 0 18px;}
+.tree li ul{ margin:0; padding:0 0 0 18px;height: auto;}
 .tree li ul.line{ background:url(./img/line_conn.gif) 0 0 repeat-y;}
 
 .tree li a {

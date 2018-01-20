@@ -1,22 +1,23 @@
 package com.wzu.oa.common.entity;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Table(name = "kynamic")
 public class Kynamic {
+    /**
+     * 主键id
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     /**
-     * 父id
+     * 父目录id
      */
     private Integer pid;
 
-    /**
-     * 名称
-     */
-    private String name;
+
 
     /**
      * 是否为父节点
@@ -25,35 +26,83 @@ public class Kynamic {
     private Boolean isParent;
 
     /**
-     * @return id
+     * 名称
+     */
+    private String name;
+
+
+
+    /**
+     * 创建时间
+     */
+    @Column(name = "create_time")
+    private Date createTime;
+
+    /**
+     * 上传文件路径
+     */
+    @Column(name = "doc_file_path")
+    private String docFilePath;
+
+    /**
+     * 描述
+     */
+    private String description;
+
+    /**
+     * 获取主键id
+     *
+     * @return id - 主键id
      */
     public Integer getId() {
         return id;
     }
 
     /**
-     * @param id
+     * 设置主键id
+     *
+     * @param id 主键id
      */
     public void setId(Integer id) {
         this.id = id;
     }
 
     /**
-     * 获取父id
+     * 获取父目录id
      *
-     * @return pid - 父id
+     * @return pid - 父目录id
      */
     public Integer getPid() {
         return pid;
     }
 
     /**
-     * 设置父id
+     * 设置父目录id
      *
-     * @param pid 父id
+     * @param pid 父目录id
      */
     public void setPid(Integer pid) {
         this.pid = pid;
+    }
+
+
+
+    /**
+     * 获取是否为父节点
+     *
+     * @return is_parent - 是否为父节点
+     */
+    public Boolean getIsParent() {
+        return isParent;
+    }
+
+    /**
+     * 设置是否为父节点
+     *
+     * @param isParent 是否为父节点
+     */
+    public void setIsParent(Boolean isParent) {
+        this.isParent = isParent;
     }
 
     /**
@@ -74,21 +123,59 @@ public class Kynamic {
         this.name = name;
     }
 
+
+
     /**
-     * 获取是否为父节点
+     * 获取创建时间
      *
-     * @return is_parent - 是否为父节点
+     * @return create_time - 创建时间
      */
-    public Boolean getIsParent() {
-        return isParent;
+    public Date getCreateTime() {
+        return createTime;
     }
 
     /**
-     * 设置是否为父节点
+     * 设置创建时间
      *
-     * @param isParent 是否为父节点
+     * @param createTime 创建时间
      */
-    public void setIsParent(Boolean isParent) {
-        this.isParent = isParent;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    /**
+     * 获取上传文件路径
+     *
+     * @return doc_file_path - 上传文件路径
+     */
+    public String getDocFilePath() {
+        return docFilePath;
+    }
+
+    /**
+     * 设置上传文件路径
+     *
+     * @param docFilePath 上传文件路径
+     */
+    public void setDocFilePath(String docFilePath) {
+        this.docFilePath = docFilePath;
+    }
+
+    /**
+     * 获取描述
+     *
+     * @return description - 描述
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * 设置描述
+     *
+     * @param description 描述
+     */
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

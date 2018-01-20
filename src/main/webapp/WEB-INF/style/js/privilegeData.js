@@ -83,7 +83,34 @@ var privilegeDate = [{
 	target:'right',
 	icon:'/style/images/MenuIcon/FUNC20056.gif',
     isParent: false
-},  {
+}, {
+    id: '8',
+    pid: '1',
+    name: '实用工具',
+    icon:'style/images/MenuIcon/FUNC20076.gif',
+    isParent: true,
+    nodes:[
+        {
+            id:'81',
+            pid:'8',
+            name:'车票预定',
+            icon:'style/images/MenuIcon/FUNC220000.gif',
+            isParent:false
+        },{
+            id:'82',
+            pid:'8',
+            name:'GIS查询',
+            icon:'style/images/MenuIcon/search.gif',
+            isParent:false
+        },{
+            id:'83',
+            pid:'8',
+            name:'邮政编码',
+            icon:'style/images/MenuIcon/FUNC249000.gif',
+            isParent:false
+        }
+    ]
+},{
     id: '9',
     pid: '1',
     name: '个人设置',

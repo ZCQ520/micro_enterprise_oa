@@ -5,27 +5,43 @@ import org.springframework.stereotype.Component;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
+import java.util.Map;
+
 
 @Component
 public interface KynamicMapper extends Mapper<Kynamic> {
     /**
-     * 根据名称获取kynamic
-     * @param name
+     * 获取根节点
      * @return
      */
-    List<Kynamic> getKynamicByName(String name);
+    Kynamic getRoot();
 
     /**
-     * 根据id获取当前节点的兄弟节点
-     * @param id
+     * 根据pid获取该文件夹下所有文件
+     * @param pid
      * @return
      */
-    List<Kynamic> getSiblingNodes(Integer id);
+    List<Kynamic> getKynamicListByPid(Integer pid);
 
     /**
-     * 根据当前节点id获取父节点
-     * @param id
+     * 获取当前节点下所有目录
+     * @param pid
      * @return
      */
-    Kynamic getParentNode(Integer id);
+    List<Kynamic> getKynamicFolderListByPid(Integer pid);
+
+    /**
+     * 获取当前节点下所有文件
+     * @param pid
+     * @return
+     */
+    List<Kynamic> getKynamicFileListByPid(Integer pid);
+
+
+    /**
+     * 根据参数获取Kynamic
+     * @param map
+     * @return
+     */
+    Kynamic getKynamicByMap(Map<String, Object> map);
 }

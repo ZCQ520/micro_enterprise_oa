@@ -26,7 +26,7 @@
 
 <!--显示表单内容-->
 <div id=MainArea>
-    <form action="${pageContext.request.contextPath}/LanDisk_Folder/list.html">
+    <form action="${pageContext.request.contextPath}/LanDiskFolder/renameKynamic">
         <div class="ItemBlock_Title1"><!-- 信息说明<DIV CLASS="ItemBlock_Title1">
         	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 文件夹重命名</DIV>  -->
         </div>
@@ -35,19 +35,26 @@
         <div class="ItemBlockBorder">
             <div class="ItemBlock">
                 <table cellpadding="0" cellspacing="0" class="mainForm">
+                    <tr>${msg}</tr>
                     <tr height="50">
 						<td width="150">
 							<img border="0" width="4" height="7" src="${pageContext.request.contextPath}/style/blue/images/item_point.gif" />
 							原文件名称
 						</td>
-						<td>OA使用指说明.doc</td>
+						<td>${kynamic.name}</td>
+
 					</tr>
 					<tr height="25">
 						<td width="150">
 							<img border="0" width="4" height="7" src="${pageContext.request.contextPath}/style/blue/images/item_point.gif" />
 							新文件名称
 						</td>
-						<td><input type="text" name="name" class="InputStyle" /> *</td>
+						<td>
+                            <input type="hidden" name="oldName" value="${kynamic.name}">
+                            <input type="hidden" name="id" value="${kynamic.id}">
+                            <input type="hidden" name="pid" value="${kynamic.pid}">
+                            <input type="hidden" name="isParent" value="0">
+                            <input type="text" name="name" class="InputStyle" /> *</td>
 					</tr>
                 </table>
             </div>

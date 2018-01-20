@@ -7,33 +7,57 @@
     -->
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="pid" jdbcType="INTEGER" property="pid" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="is_parent" jdbcType="BIT" property="isParent" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="doc_file_path" jdbcType="LONGVARCHAR" property="docFilePath" />
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
   </resultMap>
 
-  <select id="getKynamicByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="getRoot" resultMap="BaseResultMap">
     SELECT *
     FROM kynamic
-    WHERE name = #{name}
+    WHERE pid is NULL
   </select>
 
-  <select id="getSiblingNodes" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+
+  <select id="getKynamicListByPid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     SELECT *
     FROM kynamic
-    WHERE pid = (
-      SELECT pid
-      FROM kynamic
-      WHERE id = #{id}
-    )
+    WHERE pid = #{pid}
+    ORDER BY create_time ASC
   </select>
 
-  <select id="getParentNode" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+
+  <select id="getKynamicFolderListByPid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     SELECT *
     FROM kynamic
-    WHERE id = (
-      SELECT pid
-      FROM kynamic
-      WHERE id = #{id}
-    )
+    WHERE pid = #{pid}
+    AND is_parent = 1
+    ORDER BY create_time ASC
+  </select>
+
+  <select id="getKynamicFileListByPid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    SELECT *
+    FROM kynamic
+    WHERE pid = #{pid}
+    AND is_parent = 0
+    ORDER BY create_time ASC
+  </select>
+
+  <select id="getKynamicByMap" parameterType="java.util.Map" resultMap="BaseResultMap">
+    SELECT *
+    FROM kynamic
+    <where>
+      <if test="isParent == true">
+        and is_parent = 1
+      </if>
+      <if test="isParent == false">
+        and is_parent = 0
+      </if>
+      <if test="name != null">
+        and name = #{name}
+      </if>
+    </where>
   </select>
 </mapper>

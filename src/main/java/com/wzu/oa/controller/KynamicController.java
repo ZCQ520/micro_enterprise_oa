@@ -1,21 +1,30 @@
 package com.wzu.oa.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
+import com.sun.org.apache.xpath.internal.operations.Mod;
+import com.wzu.oa.common.entity.Application;
+import com.wzu.oa.common.entity.DTO.KynamicDTO;
 import com.wzu.oa.common.entity.Kynamic;
-import com.wzu.oa.common.entity.Version;
-import com.wzu.oa.common.util.BeanUtil;
-import com.wzu.oa.common.util.MapUtils;
+import com.wzu.oa.common.util.OAFileUtils;
 import com.wzu.oa.service.KynamicService;
-import com.wzu.oa.service.VersionService;
+import org.apache.commons.io.FileUtils;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author jack
@@ -27,9 +36,6 @@ public class KynamicController {
     @Resource
     private KynamicService kynamicService;
 
-    @Resource
-    private VersionService versionService;
-
 
     /**
      * 获取知识管理页面
@@ -37,7 +43,31 @@ public class KynamicController {
      * @return
      */
     @RequestMapping("/page/LanDiskFolder/list")
-    public String list() {
+    public String list(Model model) {
+        List<KynamicDTO> kynamicDTOList = kynamicService.getRootKynamicList();
+        model.addAttribute("kynamicDTOList", kynamicDTOList);
+        Kynamic kynamic = kynamicService.getRootKynamic();
+        model.addAttribute("currentPath", "/"+kynamic.getName());
+        model.addAttribute("currentId",kynamic.getId());
+        return "/LanDiskFolder/list";
+    }
+
+
+    /**
+     * 根据pid展示该目录下所有数据
+     *
+     * @return
+     */
+    @RequestMapping("/LanDiskFolder/showCurrentNodeList")
+    public String showCurrentNodeList(Model model, Kynamic kynamic) {
+        List<KynamicDTO> kynamicDTOList = kynamicService.getCurrentNodeList(kynamic.getId());
+        model.addAttribute("kynamicDTOList", kynamicDTOList);
+        String currentPath = kynamicService.getCurrentPathById(kynamic.getId());
+        model.addAttribute("currentPath", currentPath);
+        Kynamic currentKynamic = kynamicService.getKynamicById(kynamic.getId());
+        if (currentKynamic != null)
+            model.addAttribute("pid", currentKynamic.getPid());
+        model.addAttribute("currentId",kynamic.getId());
         return "/LanDiskFolder/list";
     }
 
@@ -56,67 +86,169 @@ public class KynamicController {
 
 
     /**
-     * 检查是否有重名的现象
-     *
-     * @param name
+     * 跳转saveUI添加文件夹界面
+     * @param model
+     * @param currentPath
+     * @param pid
      * @return
      */
-    @ResponseBody
-    @RequestMapping("/LanDiskFolder/isExsitName")
-    public Map<String, Object> isExsitName(String name) {
-        boolean result = kynamicService.isExsitName(name);
-        Map<String, Object> map = MapUtils.build().map();
-        if (result) {
-            //重名了
-            map.put("message", "1");
-        } else {
-            //可以使用
-            map.put("message", "2");
+    @RequestMapping("/LanDiskFolder/saveUI")
+    public String saveUI(Model model, String currentPath, Integer pid) {
+        model.addAttribute("currentPath",currentPath);
+        if (pid==null){
+            Kynamic rootKynamic = kynamicService.getRootKynamic();
+            pid = rootKynamic.getId();
         }
-        return map;
+        model.addAttribute("pid",pid);
+        return "/LanDiskFolder/saveUI";
     }
 
 
     /**
-     * 保存kynamic数据并返回id
-     *
+     * 添加文件夹
+     * @param model
      * @param kynamic
      * @return
      */
-    @ResponseBody
-    @RequestMapping("/LanDiskFolder/saveKynamic")
-    public Map<String, Object> saveKynamic(Kynamic kynamic) {
-        Integer kid = kynamicService.saveKynamic(kynamic);
-        Map<String, Object> map = MapUtils.build().put("id", kid).map();
-        return map;
+    @RequestMapping("/LanDiskFolder/addOrUpdateFolder")
+    public String addOrUpdateFolder(Model model,Kynamic kynamic) {
+        kynamic.setIsParent(true);
+        kynamic.setCreateTime(new Date());
+        kynamicService.addOrUpdateKynamic(kynamic);
+        //注意传pid，否则会报错
+        return "redirect:/LanDiskFolder/showCurrentNodeList?id="+kynamic.getPid();
     }
 
 
     /**
-     * 查看兄弟节点
-     *
-     * @param kynamic
+     * 跳转addUI添加文件界面
+     * @param model
+     * @param currentPath
+     * @param pid
      * @return
      */
-    @ResponseBody
-    @RequestMapping("/LanDiskFolder/showSiblingNodes")
-    public Map<String, Object> showSiblingNodes(Kynamic kynamic) {
-        Map<String, Object> map = MapUtils.build().put("kynamicList", kynamicService.getSiblingNodes(kynamic.getId())).map();
-        return map;
+    @RequestMapping("/LanDiskUploadFile/addUI")
+    public String addUI(Model model, String currentPath, Integer pid) {
+        model.addAttribute("currentPath",currentPath);
+        if (pid==null){
+            Kynamic rootKynamic = kynamicService.getRootKynamic();
+            pid = rootKynamic.getId();
+        }
+        model.addAttribute("pid",pid);
+        return "/LanDiskUploadFile/addUI";
     }
 
 
     /**
-     * 查看父节点
+     * 上传文件
+     * @param model
+     * @param kynamic
+     * @param resource
+     * @return
+     */
+    @RequestMapping(value = "/LanDiskFolder/uploadFile",method = RequestMethod.POST)
+    public String uploadFile(Model model, Kynamic kynamic, MultipartFile resource) {
+        String filename = resource.getOriginalFilename();
+        kynamic.setIsParent(false);
+        kynamic.setCreateTime(new Date());
+        kynamic.setName(filename);
+        String saveFilePath = OAFileUtils.saveFile(resource);
+        kynamic.setDocFilePath(saveFilePath);
+        kynamicService.addOrUpdateKynamic(kynamic);
+        return "redirect:/LanDiskFolder/showCurrentNodeList?id="+kynamic.getPid();
+    }
+
+
+    /**
+     * 跳转属性页面
+     * @param model
+     * @param currentPath
      * @param kynamic
      * @return
      */
-    @ResponseBody
-    @RequestMapping("/LanDiskFolder/showParentNode")
-    public Map<String, Object> showParentNode(Kynamic kynamic) {
-        Kynamic parentNode = kynamicService.getParentNode(kynamic.getId());
-        Map<String, Object> map = MapUtils.build().put("kynamic",parentNode).map();
-        return map;
+    @RequestMapping("/LanDiskFolder/folderAttribution")
+    public String addUI(Model model, String currentPath, Kynamic kynamic) {
+        model.addAttribute("currentPath",currentPath);
+        model.addAttribute("kynamic",kynamic);
+        model.addAttribute("pid",kynamic.getPid());
+        return "/LanDiskFolder/saveUI";
+    }
+
+
+    /**
+     * 跳转属性页面
+     * @param model
+     * @param currentPath
+     * @param kynamic
+     * @return
+     */
+    @RequestMapping("/LanDiskUploadFile/fileAttribution")
+    public String fileAttribution(Model model, String currentPath, Kynamic kynamic) {
+        model.addAttribute("currentPath",currentPath);
+        model.addAttribute("kynamic",kynamic);
+        return "/LanDiskUploadFile/editUI";
+    }
+
+
+    /**
+     * 更新file类型的文件描述
+     * @param kynamic
+     * @return
+     */
+    @RequestMapping(" /LanDiskUploadFile/updateFileDesc")
+    public String updateFileDesc(Kynamic kynamic) {
+        kynamicService.updateFileKynamic(kynamic);
+        return "redirect:/LanDiskFolder/showCurrentNodeList?id="+kynamic.getPid();
+    }
+
+
+    /**
+     * 跳转重命名文件UI
+     * @param model
+     * @param kynamic
+     * @return
+     */
+    @RequestMapping("/LanDiskUploadFile/renameFileUI")
+    public String renameFileUI(Model model, Kynamic kynamic) {
+        model.addAttribute("kynamic",kynamic);
+        return "/LanDiskUploadFile/renameUI";
+    }
+
+
+    /**
+     * 跳转重命名文件夹UI
+     * @param model
+     * @param kynamic
+     * @return
+     */
+    @RequestMapping("/LanDiskFolder/renameFolderUI")
+    public String renameFolderUI(Model model, Kynamic kynamic) {
+        model.addAttribute("kynamic",kynamic);
+        return "/LanDiskFolder/renameUI";
+    }
+
+
+    /**
+     * 重命名Kynamic
+     * @param model
+     * @param kynamic
+     * @return
+     */
+    @RequestMapping("/LanDiskFolder/renameKynamic")
+    public String renameKynamic(Model model, Kynamic kynamic, String oldName) {
+        boolean result = kynamicService.updateKynamicName(kynamic);
+        if (!result){
+            kynamic.setName(oldName);
+            model.addAttribute("kynamic",kynamic);
+            if (kynamic.getIsParent()==true){
+                model.addAttribute("msg","文件夹名称重复");
+                return "/LanDiskFolder/renameUI";
+            }else {
+                model.addAttribute("msg","文件名称重复");
+                return "/LanDiskUploadFile/renameUI";
+            }
+        }
+        return "redirect:/LanDiskFolder/showCurrentNodeList?id="+kynamic.getPid();
     }
 
 
@@ -125,40 +257,53 @@ public class KynamicController {
      * @param kynamic
      * @return
      */
-    @ResponseBody
     @RequestMapping("/LanDiskFolder/deleteNode")
-    public Map<String, Object> deleteNode(Kynamic kynamic) {
-        kynamicService.deleteKynamicById(kynamic.getId());
-        Map<String, Object> map = MapUtils.build().put("message", "操作成功").map();
-        return map;
+    public String deleteNode(Model model, Kynamic kynamic) {
+        boolean result = kynamicService.deleteKynamicById(kynamic.getId());
+        if(!result){
+            model.addAttribute("msg","删除失败，有子节点！");
+        }
+        return "forward:/LanDiskFolder/showCurrentNodeList?id="+kynamic.getPid();
     }
-
 
 
     /**
-     * 删除节点
+     * 下载上传的文件
      * @param kynamic
      * @return
      */
-    @ResponseBody
-    @RequestMapping("/LanDiskFolder/updateKynamic")
-    public Map<String, Object> updateKynamic(Kynamic kynamic) {
-        kynamicService.updateKynamic(kynamic.getId(),kynamic.getName());
-        Map<String, Object> map = MapUtils.build().put("message", "操作成功").map();
-        return map;
+    @RequestMapping("/LanDiskUploadFile/downloadFile")
+    public ResponseEntity<byte[]> deleteNode(Kynamic kynamic) {
+        kynamic = kynamicService.getKynamicById(kynamic.getId());
+        String docFilePath = kynamic.getDocFilePath();
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+        if (docFilePath != null && !docFilePath.equals("")) {
+            File file = new File(docFilePath);
+            if (file.exists()) {
+                String suffix = "";
+                String[] strings = docFilePath.split("\\.");
+                if (strings.length > 1)
+                    suffix = strings[strings.length - 1];
+                String fileName = kynamic.getName() + "." + suffix;
+                try {
+                    fileName = new String(fileName.getBytes("UTF-8"), "ISO-8859-1");
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+                headers.setContentDispositionFormData("attachment", fileName);
+                try {
+                    return new ResponseEntity<byte[]>(FileUtils.readFileToByteArray(file),
+                            headers, HttpStatus.OK);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return new ResponseEntity<byte[]>(headers, HttpStatus.OK);
     }
 
-    //TODO spring mvc转换json数据时date类型会被转换为时间戳，解决方法：在date属性上加@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
-    /**
-     * 根据文件id查看所有版本
-     * @param kynamic
-     * @return
-     */
-    @ResponseBody
-    @RequestMapping("/LanDiskFolder/showVersionsById")
-    public Map<String, Object> showVersionsById(Kynamic kynamic) {
-        List<Version> versionList = versionService.getVersionsByKid(kynamic.getId());
-        Map<String, Object> map = MapUtils.build().put("versionList", versionList).map();
-        return map;
-    }
+
+
+
 }

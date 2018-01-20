@@ -26,7 +26,7 @@
 
 <!--显示表单内容-->
 <DIV ID=MainArea>
-    <FORM ACTION="${pageContext.request.contextPath}/LanDisk_Folder/list.html">
+    <FORM ACTION="${pageContext.request.contextPath}/LanDiskUploadFile/updateFileDesc">
         <DIV CLASS="ItemBlock_Title1"><!-- 信息说明<DIV CLASS="ItemBlock_Title1">
         	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 文件属性</DIV>  -->
         </DIV>
@@ -38,17 +38,20 @@
                     <TR>
                         <TD WIDTH="100">文件信息</TD>
                         <TD><SPAN ID="oldFileInfo">
-								使用手册.doc （1.5K）
+								${kynamic.name}
 							</SPAN>
 						</TD>
                     </TR>
                     <TR>
                         <TD>文件描述</TD>
-                        <TD><TEXTAREA NAME="description" CLASS="TextareaStyle"></TEXTAREA></TD>
+                        <TD><TEXTAREA NAME="description" CLASS="TextareaStyle">${kynamic.description}</TEXTAREA></TD>
                     </TR>
 					<TR>
                         <TD>所属文件夹</TD>
-                        <TD><INPUT TYPE="TEXT" NAME="parentId" READONLY VALUE="/OA文档/" CLASS="InputStyle" /></TD>
+                        <TD>
+                            <input type="hidden" name="id" value="${kynamic.id}">
+                            <input type="hidden" name="pid" value="${kynamic.pid}">
+                            <INPUT TYPE="TEXT" NAME="parentId" READONLY VALUE="/OA文档/" CLASS="InputStyle" /></TD>
                     </TR>
                 </TABLE>
             </DIV>
