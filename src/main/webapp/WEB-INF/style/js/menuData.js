@@ -1,79 +1,45 @@
-var privilegeDate = [{
-    id: '2',
-    pid: '1',
-    isParent: true,
-	icon:'style/images/MenuIcon/FUNC20001.gif',
-	open:true,
-    name: '个人办公',
-	nodes:[
-		{
-			id:'21',
-			pid:'2',
-			isParent:false,
-			icon:'style/images/MenuIcon/FUNC20054.gif',
-			name:'个人考勤'
-		},{
-			id:'22',
-			pid:'2',
-			isParent:false,
-			icon:'style/images/MenuIcon/FUNC23700.gif',
-			name:'日程安排'
-		},{
-			id:'23',
-			pid:'2',
-			isParent:false,
-			icon:'style/images/MenuIcon/FUNC20069.gif',
-			name:'工作计划'
-		},{
-			id:'24',
-			pid:'2',
-			isParent:false,
-			icon:'style/images/MenuIcon/FUNC20056.gif',
-			name:'工作日记'
-		}
-	]
-}, {
-    id: '3',
-    pid: '1',
+var privilegeDate = [ {
+    id: '1',
+    pid: '',
     name: '审批流转',
 	icon:'style/images/MenuIcon/FUNC20057.gif',
     isParent: true,
 	nodes:[
 		{
-			id:'31',
-			pid:'3',
+			id:'11',
+			pid:'1',
 			isParent:false,
 			icon:'style/images/MenuIcon/manager.gif',
 			target:'right',
 			url:'/FlowProcessDefinition/list',
 			name:'审批流程管理'
 		},{
-			id:'32',
-			pid:'3',
+			id:'12',
+			pid:'1',
 			isParent:false,
 			target:'right',
 			url:'FlowFormTemplate/list',
 			icon:'style/images/MenuIcon/formmodel.gif',
 			name:'表单模板管理'
 		},{
-			id:'33',
-			pid:'3',
+			id:'13',
+			pid:'1',
 			isParent:false,
 			target:'right',
 			url:'FlowFormFlow/formTemplateList',
 			icon:'style/images/MenuIcon/FUNC241000.gif',
 			name:'发起申请'
 		},{
-			id:'34',
-			pid:'3',
+			id:'14',
+			pid:'1',
 			isParent:false,
 			target:'right',
 			url:'FlowFormFlow/myTaskList',
 			icon:'style/images/MenuIcon/FUNC20029.gif',
 			name:'审批处理'
 		},{
-			id:'35',
-			pid:'3',
+			id:'15',
+			pid:'1',
 			target:'right',
 			isParent:false,
 			url:'FlowFormFlowOld/mySubmittedList',
@@ -82,37 +48,37 @@ var privilegeDate = [{
 		}
 	]
 }, {
-    id: '4',
-    pid: '1',
+    id: '2',
+    pid: '',
     name: '知识管理',
 	target:'right',
 	url:'LanDiskFolder/list',
 	icon:'style/images/MenuIcon/FUNC20056.gif',
     isParent: false
 },{
-    id: '8',
-    pid: '1',
+    id: '3',
+    pid: '',
     name: '实用工具',
     icon:'style/images/MenuIcon/FUNC20076.gif',
     isParent: true,
     nodes:[
         {
-            id:'81',
-            pid:'8',
+            id:'31',
+            pid:'3',
             name:'车票预定',
             url:'http://www.12306.cn',
             icon:'style/images/MenuIcon/FUNC220000.gif',
             isParent:false
         },{
-            id:'82',
-            pid:'8',
+            id:'32',
+            pid:'3',
             name:'飞机航班',
             url:'http://www.airchina.com.cn',
             icon:'style/images/MenuIcon/search.gif',
             isParent:false
         },{
-            id:'83',
-            pid:'8',
+            id:'33',
+            pid:'3',
             name:'邮政编码',
             url:'http://www.yb21.cn',
             icon:'style/images/MenuIcon/FUNC249000.gif',
@@ -121,23 +87,23 @@ var privilegeDate = [{
 
     ]
 },{
-    id: '9',
-    pid: '1',
+    id: '4',
+    pid: '',
     name: '个人设置',
 	icon:'style/images/MenuIcon/FUNC20001.gif',
     isParent: true,
 	nodes:[
 		{
-			id:'91',
-			pid:'9',
+			id:'41',
+			pid:'4',
 			name:'个人信息',
 			target:'right',
 			icon:'style/images/MenuIcon/FUNC20001.gif',
 			url:'PersonConfig/editUserInfoUI',
 			isParent:false
 		},{
-			id:'92',
-			pid:'9',
+			id:'42',
+			pid:'4',
 			name:'密码修改',
 			target:'right',
 			url:'PersonConfig/editPasswordUI',
@@ -146,31 +112,31 @@ var privilegeDate = [{
 		}
 	]
 }, {
-    id: '10',
-    pid: '1',
+    id: '5',
+    pid: '',
     name: '系统管理',
 	icon:'style/images/MenuIcon/system.gif',
     isParent: true,
 	nodes:[
 		{
-			id:'101',
-			pid:'10',
+			id:'51',
+			pid:'5',
 			name:'岗位管理',
 			target:'right',
 			icon:'style/images/MenuIcon/FUNC20001.gif',
 			url:'SystemRole/list',
 			isParent:false
 		},{
-			id:'102',
-			pid:'10',
+			id:'52',
+			pid:'5',
 			name:'部门管理',
 			target:'right',
 			icon:'style/images/MenuIcon/department.gif',
 			url:'SystemDepartment/list',
 			isParent:false
 		},{
-			id:'103',
-			pid:'10',
+			id:'53',
+			pid:'5',
 			name:'用户管理',
 			target:'right',
 			icon:'style/images/MenuIcon/FUNC20001.gif',

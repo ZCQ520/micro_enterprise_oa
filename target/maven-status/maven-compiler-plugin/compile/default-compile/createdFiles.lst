@@ -31,6 +31,7 @@ com\wzu\oa\service\impl\FlowServiceImpl.class
 com\wzu\oa\mapper\PostMapper.class
 com\wzu\oa\common\util\MapUtils.class
 com\wzu\oa\mapper\TemplateMapper.class
+com\wzu\oa\common\BusinessException.class
 com\wzu\oa\mapper\ApproveInfoMapper.class
 com\wzu\oa\common\entity\Resource.class
 com\wzu\oa\common\entity\var\ApplicationVar.class

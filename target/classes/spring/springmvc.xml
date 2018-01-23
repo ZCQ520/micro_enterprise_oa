@@ -49,6 +49,7 @@
     </bean>
 
 
+    <!--  //启用@RequirePremission注解时抛异常解决方法-->
     <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <property name="exceptionMappings">
             <props>

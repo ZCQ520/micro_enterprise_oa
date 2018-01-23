@@ -20,7 +20,7 @@
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
         <!-- 如果没有认证将要跳转的登陆地址，http可访问的url，如果不在表单认证过虑器FormAuthenticationFilter中指定此地址就为身份认证地址 -->
-        <property name="loginUrl" value="/SystemUser/loginUI"/>
+        <property name="loginUrl" value="/user/login"/>
         <!-- 登陆成功后要跳转的连接 -->
         <property name="successUrl" value="/index"/>
         <!-- 没有权限跳转的地址 -->
@@ -40,11 +40,11 @@
                 /page/style/** = anon
                 <!-- 无权访问页面 -->
                 /page/refuse = anon
-                <!-- 必须通过身份认证方可访问，身份认 证的url必须和过虑器中指定的loginUrl一致 -->
-                / = authc
                 <!-- 退出拦截，请求logout.action执行退出操作 -->
                 /logout = logout
-
+                <!-- 必须通过身份认证方可访问，身份认 证的url必须和过虑器中指定的loginUrl一致 -->
+                / = authc
+                /** = authc
                 <!--             roles[XX]表示有XX角色才可访问
                             /item/list.action = roles[item],authc
                             /js/** anon
@@ -113,7 +113,6 @@
         <property name="passwordParam" value="password"/>
         <!-- <property name="rememberMeParam" value="rememberMe"/> -->
         <!-- loginurl：用户登陆地址，此地址是可以http访问的url地址 -->
-        <property name="loginUrl" value="/SystemUser/loginUI"/>
     </bean>
 
 

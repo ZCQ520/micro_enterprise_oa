@@ -61,7 +61,8 @@ public class UserRealm extends AuthorizingRealm{
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-        String username = (String) token.getPrincipal();
+        UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken) token;
+        String username = usernamePasswordToken.getUsername();
         if (username == null) {
             throw new AccountException("用户名不能为空");
         }

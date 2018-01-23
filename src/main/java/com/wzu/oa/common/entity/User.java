@@ -1,9 +1,10 @@
 package com.wzu.oa.common.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Table(name = "user")
-public class User {
+public class User implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

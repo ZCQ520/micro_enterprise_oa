@@ -12,11 +12,9 @@
     <script language="javascript" src="${pageContext.request.contextPath}/script/PageUtils.js" charset="utf-8"></script>
     <script language="javascript" src="${pageContext.request.contextPath}/style/js/privilegeData.js"
             charset="utf-8"></script>
-    <script language="javascript" src="${pageContext.request.contextPath}/style/js/privilegeTree.js"
-            charset="utf-8"></script>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/style/blue/pageCommon.css"/>
-    <script type="text/javascript">
-    </script>
+    <script language="javascript" src="${pageContext.request.contextPath}/style/js/privilege.js"></script>
+    <script language="javascript" src="${pageContext.request.contextPath}/style/js/jsonToStr.js"></script>
 </head>
 <body>
 
@@ -51,6 +49,7 @@
         <c:forEach items="${users}" var="user">
             <tr class="TableDetail1 template">
                 <td>${user.user.username}&nbsp;</td>
+                <input type="hidden" name="uid" value="${user.user.id}"/>
                 <td>${user.user.name}&nbsp;</td>
                 <td>${user.departmentName}&nbsp;</td>
                 <td>${user.user.note}&nbsp;</td>
@@ -72,7 +71,7 @@
     <div class="ItemBlock_Title1" id="userTitle" style="display: none;"><!-- 信息说明 -->
         <div class="ItemBlock_Title1">
             <img border="0" width="4" height="7"
-                 src="${pageContext.request.contextPath}/style/blue/images/item_point.gif"/>用户:${sessionScope.get("user").username}
+                 src="${pageContext.request.contextPath}/style/blue/images/item_point.gif"/>用户:
             <div id="userImage"></div>
         </div>
         <div class="ItemBlock_Title1" id="privilegeTitle" style="display: none;">
@@ -91,8 +90,7 @@
                     <tr align="LEFT" valign="MIDDLE" id="TableTitle">
                         <td width="300px" style="padding-left: 7px;">
                             <!-- 如果把全选元素的id指定为selectAll，并且有函数selectAll()，就会有错。因为有一种用法：可以直接用id引用元素 -->
-                            <input type="checkbox" id="allchecked"
-                                   onchange="privilegeCheckedAll(this.checked,this.id)"/>
+                            <input type="checkbox" id="allchecked"/>
                             <label for="cbSelectAll">全选</label>
                         </td>
                     </tr>
@@ -112,7 +110,7 @@
         </div>
         <!-- 表单操作 -->
         <div id="InputDetailBar">
-            <image onclick="savePrivilege()" src="${pageContext.request.contextPath}/style/images/save.png"/>
+            <image id="savePrivilege" src="${pageContext.request.contextPath}/style/images/save.png"/>
         </div>
     </div>
 
