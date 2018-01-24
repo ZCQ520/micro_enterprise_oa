@@ -1,29 +1,43 @@
 package com.wzu.oa.common.entity;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Table(name = "resource")
-public class Resource implements Serializable{
+public class Resource {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     /**
-     * shiro权限
+     * 父节点id
      */
-    private String permission;
+    private Integer pid;
 
     /**
-     * 用户id
+     * 资源名
      */
-    @Column(name = "user_id")
-    private Integer userId;
+    private String name;
 
     /**
-     * 访问url
+     * 是否为文件夹节点
+     */
+    @Column(name = "is_parent")
+    private Boolean isParent;
+
+    /**
+     * 目标窗口
+     */
+    private String target;
+
+    /**
+     * 跳转路径
      */
     private String url;
+
+    /**
+     * 图标图片的路径
+     */
+    private String icon;
 
     /**
      * @return id
@@ -40,56 +54,110 @@ public class Resource implements Serializable{
     }
 
     /**
-     * 获取shiro权限
+     * 获取父节点id
      *
-     * @return permission - shiro权限
+     * @return pid - 父节点id
      */
-    public String getPermission() {
-        return permission;
+    public Integer getPid() {
+        return pid;
     }
 
     /**
-     * 设置shiro权限
+     * 设置父节点id
      *
-     * @param permission shiro权限
+     * @param pid 父节点id
      */
-    public void setPermission(String permission) {
-        this.permission = permission;
+    public void setPid(Integer pid) {
+        this.pid = pid;
     }
 
     /**
-     * 获取用户id
+     * 获取资源名
      *
-     * @return user_id - 用户id
+     * @return name - 资源名
      */
-    public Integer getUserId() {
-        return userId;
+    public String getName() {
+        return name;
     }
 
     /**
-     * 设置用户id
+     * 设置资源名
      *
-     * @param userId 用户id
+     * @param name 资源名
      */
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
-     * 获取访问url
+     * 获取是否为文件夹节点
      *
-     * @return url - 访问url
+     * @return is_parent - 是否为文件夹节点
+     */
+    public Boolean getIsParent() {
+        return isParent;
+    }
+
+    /**
+     * 设置是否为文件夹节点
+     *
+     * @param isParent 是否为文件夹节点
+     */
+    public void setIsParent(Boolean isParent) {
+        this.isParent = isParent;
+    }
+
+    /**
+     * 获取目标窗口
+     *
+     * @return target - 目标窗口
+     */
+    public String getTarget() {
+        return target;
+    }
+
+    /**
+     * 设置目标窗口
+     *
+     * @param target 目标窗口
+     */
+    public void setTarget(String target) {
+        this.target = target;
+    }
+
+    /**
+     * 获取跳转路径
+     *
+     * @return url - 跳转路径
      */
     public String getUrl() {
         return url;
     }
 
     /**
-     * 设置访问url
+     * 设置跳转路径
      *
-     * @param url 访问url
+     * @param url 跳转路径
      */
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    /**
+     * 获取图标图片的路径
+     *
+     * @return icon - 图标图片的路径
+     */
+    public String getIcon() {
+        return icon;
+    }
+
+    /**
+     * 设置图标图片的路径
+     *
+     * @param icon 图标图片的路径
+     */
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 }

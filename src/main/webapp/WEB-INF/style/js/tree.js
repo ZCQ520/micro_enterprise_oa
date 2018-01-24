@@ -12,5 +12,7 @@ $(document).ready(function(){
 			nodes:[]
 		}
     };
-	zTree1 = $("#menuTree").zTree(setting, privilegeDate);
+    $.post("/menuItem/getAllMenu",null,function(data){
+		zTree1 = $("#menuTree").zTree(setting, data);
+    });
 });

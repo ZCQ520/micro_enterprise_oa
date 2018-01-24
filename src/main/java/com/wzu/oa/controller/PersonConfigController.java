@@ -29,7 +29,7 @@ public class PersonConfigController {
      * @return
      */
     @RequiresPermissions("密码修改")
-    @RequestMapping(value = "/page/PersonConfig/editPasswordUI")
+    @RequestMapping(value = "/PersonConfig/editPasswordUI")
     public String editPasswordUI(Model model) {
         return "/PersonConfig/editPasswordUI";
     }
@@ -40,7 +40,8 @@ public class PersonConfigController {
      * @param session
      * @return
      */
-    @RequestMapping(value = "/page/PersonConfig/editUserInfoUI")
+    @RequiresPermissions("个人信息")
+    @RequestMapping(value = "/PersonConfig/editUserInfoUI")
     public String editUserInfoUI(Model model, HttpSession session) {
         User user = (User) session.getAttribute("user");
         if (user==null)

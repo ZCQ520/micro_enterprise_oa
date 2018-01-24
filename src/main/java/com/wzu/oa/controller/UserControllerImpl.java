@@ -1,13 +1,14 @@
 package com.wzu.oa.controller;
 
 
-import com.wzu.oa.common.BusinessException;
+import com.wzu.oa.common.exception.BusinessException;
 import com.wzu.oa.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -31,18 +32,20 @@ public class UserControllerImpl {
      * @return
      */
     @RequestMapping(method = {RequestMethod.POST,RequestMethod.GET}, value = "/login")
-    public String login(HttpServletRequest request) throws Exception {
+    public String login(HttpServletRequest request, Model model) throws Exception {
         // 如果登录失败从request中获取认证异常信息，shiroLoginFailure就是shiro异常类的全限定名
         // 根据shiro返回的异常类路径判断，抛出指定异常信息
         String exceptionClassName = (String) request.getAttribute("shiroLoginFailure");
         if (exceptionClassName != null) {
             if (UnknownAccountException.class.getName().equals(exceptionClassName)) {
-                throw new BusinessException("用户名不存在");
+                model.addAttribute("msg","用户名不存在");
+                return "/SystemUser/loginUI";
             } else if (IncorrectCredentialsException.class.getName().equals(exceptionClassName)) {
-
-                throw new BusinessException("用户名/密码不正确");
+                model.addAttribute("msg","用户名/密码不正确");
+                return "/SystemUser/loginUI";
             }else {
-                throw new Exception();// 最终在异常处理器生成未知错误
+                model.addAttribute("msg","未知错误");
+                return "/SystemUser/loginUI";
             }
         }
         // 此方法不处理登陆成功（认证成功），shiro认证成功会自动跳转到上一个请求路径

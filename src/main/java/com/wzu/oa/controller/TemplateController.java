@@ -8,6 +8,7 @@ import com.wzu.oa.service.TemplateService;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -58,11 +59,11 @@ public class TemplateController {
 
     /**
      * 获取模板列表
-     *
      * @param model
      * @return
      */
-    @RequestMapping("/page/FlowFormTemplate/list")
+    @RequiresPermissions("表单模板管理")
+    @RequestMapping("/FlowFormTemplate/list")
     public String getTemplateList(Model model) {
         List<Template> templates = templateService.findList();
         List<TemplateDTO> templateDTOS = new ArrayList<>();
@@ -86,7 +87,7 @@ public class TemplateController {
     public String saveOrUpdateTemplate(Template template, MultipartFile file) {
 
         templateService.saveOrUpdateTemplate(template, file);
-        return "redirect:/page/FlowFormTemplate/list";
+        return "redirect:/FlowFormTemplate/list";
     }
 
 
@@ -99,7 +100,7 @@ public class TemplateController {
     @RequestMapping("/FlowFormTemplate/deleteTemplateById")
     public String deleteTemplateById(Integer tid) {
         templateService.deleteTemplateById(tid);
-        return "redirect:/page/FlowFormTemplate/list";
+        return "redirect:/FlowFormTemplate/list";
     }
 
 

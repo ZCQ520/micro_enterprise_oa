@@ -13,6 +13,7 @@
             <DIV ID="LogoImg"><IMG BORDER="0" SRC="${pageContext.request.contextPath}/style/blue/images/logo.png" /></DIV>
             <DIV ID="LoginInfo">
                 <TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 width=100%>
+                    <TR>${msg}</TR>
                     <TR>
                         <TD width=45 CLASS="Subject"><IMG BORDER="0" SRC="${pageContext.request.contextPath}/style/blue/images/login/userId.gif" /></TD>
                         <TD><INPUT SIZE="20" CLASS="TextField" TYPE="text" NAME="account" /></TD>

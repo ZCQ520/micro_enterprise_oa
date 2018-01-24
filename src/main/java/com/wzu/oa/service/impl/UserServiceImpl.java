@@ -2,6 +2,7 @@ package com.wzu.oa.service.impl;
 
 
 import com.wzu.oa.common.entity.User;
+import com.wzu.oa.common.util.MapUtils;
 import com.wzu.oa.mapper.ResourceMapper;
 import com.wzu.oa.mapper.UserMapper;
 import com.wzu.oa.service.UserService;
@@ -11,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author jack
@@ -44,7 +46,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<com.wzu.oa.common.entity.Resource> getResourcesListByUserId(Integer userId) {
-        return resourceMapper.getResourcesListByUserId(userId);
+    public List<String> getUserPermissionsByResourceIds(List<Integer> resourceIds) {
+        Map<String, Object> map = MapUtils.build().put("resourceIds", resourceIds).map();
+        List<String> permissions = resourceMapper.getUserPermissionsByResourceIds(map);
+        return permissions;
     }
+
+
 }

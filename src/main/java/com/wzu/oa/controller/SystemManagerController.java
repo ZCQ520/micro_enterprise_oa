@@ -6,6 +6,7 @@ import com.wzu.oa.common.entity.Post;
 import com.wzu.oa.common.entity.DTO.SecondDepartment;
 import com.wzu.oa.common.entity.User;
 import com.wzu.oa.service.SystemManagerService;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,7 +30,8 @@ public class SystemManagerController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/page/SystemRole/list")
+    @RequiresPermissions("岗位管理")
+    @RequestMapping(value = "/SystemRole/list")
     public String systemRoleList(Model model) {
         List<Post> posts = systemManagerService.findAllPost();
         model.addAttribute("posts", posts);
@@ -47,7 +49,7 @@ public class SystemManagerController {
     public String addOrUpdateRole(Model model, Post post) {
         boolean result = systemManagerService.saveOrUpdateRole(post);
         if (result) {
-            return "redirect:/page/SystemRole/list";
+            return "redirect:/SystemRole/list";
         } else {
             model.addAttribute("msg", "添加失败");
             return "SystemRole/saveUI";
@@ -69,7 +71,7 @@ public class SystemManagerController {
             return "redirect:/page/SystemRole/list";
         } else {
             model.addAttribute("msg", "删除失败");
-            return "forward:/page/SystemRole/list";
+            return "forward:/SystemRole/list";
         }
     }
 
@@ -94,7 +96,8 @@ public class SystemManagerController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/page/SystemDepartment/list")
+    @RequiresPermissions("部门管理")
+    @RequestMapping(value = "/SystemDepartment/list")
     public String systemDepartmentList(Model model) {
         List<Department> departments = systemManagerService.getFirstDepartment();
         model.addAttribute("departments", departments);
@@ -194,7 +197,8 @@ public class SystemManagerController {
      * @param model
      * @return
      */
-    @RequestMapping(value = "/page/SystemUser/list")
+    @RequiresPermissions("用户管理")
+    @RequestMapping(value = "/SystemUser/list")
     public String systemUserList(Model model) {
         List<UserDTO> users = systemManagerService.findAllUser();
         model.addAttribute("users", users);
@@ -212,7 +216,7 @@ public class SystemManagerController {
         boolean result = systemManagerService.deleteUserById(uid);
         if (!result)
             model.addAttribute("msg","删除失败");
-        return "forward:/page/SystemUser/list";
+        return "forward:/SystemUser/list";
     }
 
     /**

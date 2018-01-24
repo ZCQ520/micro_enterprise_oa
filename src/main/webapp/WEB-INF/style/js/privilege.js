@@ -69,7 +69,7 @@ var privilege = {
              */
             setting: {
                 isSimpleData: true,
-                treeNodeKey: "mid",
+                treeNodeKey: "id",
                 treeNodeParentKey: "pid",
                 showLine: true,
                 root: {
@@ -110,7 +110,8 @@ var privilege = {
 				var parameter = {
 					uid:privilege.data.user.uid
 				};
-                    privilege.pFunction.privilegeTree.zTree = $("#privilegeTree").zTree(privilege.pFunction.privilegeTree.setting, privilegeDate);
+                $.post("/menuItem/getPrivilegeMenu", null, function(data){
+                    privilege.pFunction.privilegeTree.zTree = $("#privilegeTree").zTree(privilege.pFunction.privilegeTree.setting, data);
                     /**
                      * 这里是设置全选按钮默认状态的最佳位置
                      *    *  默认值必须在点击设置权限的超级连接中设置
@@ -122,6 +123,7 @@ var privilege = {
                     else {
                         $("#allchecked").attr("checked", true);
                     }
+                });
             },
             /**
              * 对权限树的复选框的控制
@@ -149,9 +151,8 @@ var privilege = {
 					uid:privilege.data.user.uid,
 					mids:mids
 				};
-            	$.post("privilegeAction_savePrivilege.action",parameter,function(data){
-
-
+            	$.post("/privilege/savePrivilege",parameter,function(data){
+                    alert(data.msg);
 				});
             },
             /**

@@ -6,14 +6,23 @@
       WARNING - @mbg.generated
     -->
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="permission" jdbcType="VARCHAR" property="permission" />
-    <result column="user_id" jdbcType="INTEGER" property="userId" />
-    <result column="url" jdbcType="LONGVARCHAR" property="url" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="is_parent" jdbcType="BIT" property="isParent" />
+    <result column="target" jdbcType="VARCHAR" property="target" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="icon" jdbcType="LONGVARCHAR" property="icon" />
   </resultMap>
 
-  <select id="getResourcesListByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    SELECT *
+
+  <select id="getUserPermissionsByResourceIds" parameterType="java.util.Map" resultType="java.lang.String">
+    SELECT name
     FROM resource
-    WHERE user_id = #{userId}
+      <where>
+        id in
+        <foreach collection="resourceIds" item="item" open="(" close=")" separator=",">
+         #{item}
+        </foreach>
+      </where>
   </select>
 </mapper>

@@ -1,7 +1,9 @@
 package com.wzu.oa.common.shiro;
 
 import com.wzu.oa.common.entity.User;
+import com.wzu.oa.common.entity.UserResource;
 import com.wzu.oa.common.util.ListUtils;
+import com.wzu.oa.service.UserResourceService;
 import com.wzu.oa.service.UserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationException;
@@ -11,6 +13,7 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,8 +22,12 @@ import java.util.List;
  */
 public class UserRealm extends AuthorizingRealm{
 
+
     @Resource
     private UserService userService;
+
+    @Resource
+    private UserResourceService userResourceService;
 
     @Override
     public String getName(){
@@ -44,10 +51,13 @@ public class UserRealm extends AuthorizingRealm{
             throw new AuthorizationException("Principal 对象不能为空");
         }
         User user = (User) principals.fromRealm(getName()).iterator().next();
-        List<com.wzu.oa.common.entity.Resource> resources = userService.getResourcesListByUserId(user.getId());
-        //获取用户响应的permission
-        List<String> permissions =
-                ListUtils.getListFieldToList(resources, "permission");
+        //获取用户所有的资源
+        List<UserResource> userResources = userResourceService.getUserResourceByUserId(user.getId());
+        List<String> permissions = new ArrayList<>();
+        if (userResources!=null && userResources.size()!=0){
+            List<Integer> resourceIds =ListUtils.getListFieldToList(userResources, "resourceId");
+            permissions = userService.getUserPermissionsByResourceIds(resourceIds);
+        }
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         info.addStringPermissions(permissions);
         return info;

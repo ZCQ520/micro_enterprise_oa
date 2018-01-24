@@ -7,6 +7,7 @@ import com.wzu.oa.common.entity.Kynamic;
 import com.wzu.oa.common.util.OAFileUtils;
 import com.wzu.oa.service.KynamicService;
 import org.apache.commons.io.FileUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -42,7 +43,8 @@ public class KynamicController {
      *
      * @return
      */
-    @RequestMapping("/page/LanDiskFolder/list")
+    @RequiresPermissions("知识管理")
+    @RequestMapping("/LanDiskFolder/list")
     public String list(Model model) {
         List<KynamicDTO> kynamicDTOList = kynamicService.getRootKynamicList();
         model.addAttribute("kynamicDTOList", kynamicDTOList);

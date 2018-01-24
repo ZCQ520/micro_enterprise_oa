@@ -12,6 +12,7 @@ import com.wzu.oa.service.ApproveInfoService;
 import com.wzu.oa.service.FlowService;
 import com.wzu.oa.service.TemplateService;
 import org.apache.commons.io.FileUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -52,11 +53,11 @@ public class FlowController {
 
     /**
      * 查看所有的申请模板
-     *
      * @param model
      * @return
      */
-    @RequestMapping("/page/FlowFormFlow/formTemplateList")
+    @RequiresPermissions("发起申请")
+    @RequestMapping("/FlowFormFlow/formTemplateList")
     public String formTemplateList(Model model) {
         List<Template> templates = templateService.findList();
         model.addAttribute("templates", templates);
@@ -92,18 +93,18 @@ public class FlowController {
         Template template = templateService.findById(templateId);
         Application application = ApplicationUtils.getApplication(resource, user, template);
         flowService.submit(application, template.getPdKey());
-        return "forward:/page/FlowFormFlowOld/mySubmittedList";
+        return "forward:/FlowFormFlowOld/mySubmittedList";
     }
 
 
     /**
      * 查看我的提交列表
-     *
      * @param model
      * @param session
      * @return
      */
-    @RequestMapping("/page/FlowFormFlowOld/mySubmittedList")
+    @RequiresPermissions("查询状态")
+    @RequestMapping("/FlowFormFlowOld/mySubmittedList")
     public String mySubmittedList(Model model, HttpSession session) {
         User user = (User) session.getAttribute("user");
         List<ApplicationDTO> applicationDTOS = flowService.getMySubmitList(user.getId());
@@ -139,12 +140,12 @@ public class FlowController {
 
     /**
      * 我的待处理任务
-     *
      * @param model
      * @param session
      * @return
      */
-    @RequestMapping("/page/FlowFormFlow/myTaskList")
+    @RequiresPermissions("审批处理")
+    @RequestMapping("/FlowFormFlow/myTaskList")
     public String myTaskList(Model model, HttpSession session) {
         User user = (User) session.getAttribute("user");
         List<TaskDTO> taskDTOList = flowService.findMyTaskList(user);
@@ -244,7 +245,7 @@ public class FlowController {
         approveInfo.setUserId(user.getId());
         //审批
         approveInfoService.approve(approveInfo, taskId);
-        return "forward:/page/FlowFormFlow/myTaskList";
+        return "forward:/FlowFormFlow/myTaskList";
     }
 
 

@@ -1,7 +1,6 @@
 package com.wzu.oa.service;
 
 
-import com.wzu.oa.common.entity.Resource;
 import com.wzu.oa.common.entity.User;
 
 import java.util.List;
@@ -32,10 +31,11 @@ public interface UserService {
      */
     User getUserById(Integer userId);
 
+
     /**
-     * 根据用户id查看用户资源
-     * @param userId
+     * 根据资源id获取用户所有权限
+     * @param resourceIds
      * @return
      */
-    List<Resource> getResourcesListByUserId(Integer userId);
+    List<String> getUserPermissionsByResourceIds(List<Integer> resourceIds);
 }

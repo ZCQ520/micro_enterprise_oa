@@ -1,4 +1,4 @@
-package com.wzu.oa.common;
+package com.wzu.oa.common.exception;
 
 /**
  * @author jack
