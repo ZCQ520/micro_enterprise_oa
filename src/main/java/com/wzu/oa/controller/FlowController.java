@@ -245,6 +245,11 @@ public class FlowController {
         approveInfo.setUserId(user.getId());
         //审批
         approveInfoService.approve(approveInfo, taskId);
+        Integer taskNumber = (Integer) session.getAttribute("taskNumber");
+        if (taskNumber>=1) {
+            taskNumber -= 1;
+        }
+        session.setAttribute("taskNumber",taskNumber);
         return "forward:/FlowFormFlow/myTaskList";
     }
 

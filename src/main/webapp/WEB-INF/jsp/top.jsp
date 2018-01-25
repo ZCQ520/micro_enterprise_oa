@@ -45,27 +45,15 @@
     <div id="Head2">
         <div id="Head2_Awoke">
             <ul id="AwokeNum">
-                <li><a target="desktop" href="javascript:void(0)">
-						<img border="0" width="11" height="13" src="${pageContext.request.contextPath}/style/images/top/msg.gif" /> 消息
-						<span id="msg"></span>
-					</a>
-				</li>
-                <li class="Line"></li>
-                <li><a target="desktop" href="javascript:void(0)">
-						<img border="0" width="16" height="11" src="${pageContext.request.contextPath}/style/images/top/mail.gif" /> 邮件
-						<span id="mail"></span>
-					</a>
-				</li>
-                <li class="Line"></li>
 				  <!-- 是否有待审批文档的提示1，数量 -->
-                <li><a href="Flow_Formflow/myTaskList.html" target="desktop">
+                <li><a href="${pageContext.request.contextPath}/FlowFormFlow/myTaskList" target="right">
                 		<img border="0" width="12" height="14" src="${pageContext.request.contextPath}/style/images/top/wait.gif" />
-                		待办事项（<span id="wait" class="taskListSize">1</span>）
+                		待办事项（<span id="wait" class="taskListSize">${sessionScope.get("taskNumber")} </span>）
                 	</a>
                 </li>
 				  
                 <!-- 是否有待审批文档的提示2，提示审批 -->
-                <li id="messageArea">您有 1 个待审批文档，请及时审批！★★★★★</li>
+                <li id="messageArea">您有 ${sessionScope.get("taskNumber")} 个待审批文档，请及时审批！★★★★★</li>
             </ul>
         </div>
         
