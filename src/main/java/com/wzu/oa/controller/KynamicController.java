@@ -283,11 +283,7 @@ public class KynamicController {
         if (docFilePath != null && !docFilePath.equals("")) {
             File file = new File(docFilePath);
             if (file.exists()) {
-                String suffix = "";
-                String[] strings = docFilePath.split("\\.");
-                if (strings.length > 1)
-                    suffix = strings[strings.length - 1];
-                String fileName = kynamic.getName() + "." + suffix;
+                String fileName = kynamic.getName();
                 try {
                     fileName = new String(fileName.getBytes("UTF-8"), "ISO-8859-1");
                 } catch (UnsupportedEncodingException e) {
