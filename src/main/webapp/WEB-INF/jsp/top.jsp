@@ -22,7 +22,7 @@
 			</div>
 			<div id="Head1Right_UserDept"></div>
 			<div id="Head1Right_UserSetup">
-            	<a href="${pageContext.request.contextPath}/page/PersonConfig/editUserInfoUI" target="right" >
+            	<a href="${pageContext.request.contextPath}/PersonConfig/editUserInfoUI" target="right" >
 					<img border="0" width="13" height="14" src="${pageContext.request.contextPath}/style/images/top/user_setup.gif" /> 个人设置
 				</a>
 			</div>

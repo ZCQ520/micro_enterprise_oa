@@ -68,7 +68,7 @@ public class SystemManagerController {
     public String deleteRole(Model model, Integer pid) {
         boolean result = systemManagerService.deleteRole(pid);
         if (result) {
-            return "redirect:/page/SystemRole/list";
+            return "redirect:/SystemRole/list";
         } else {
             model.addAttribute("msg", "删除失败");
             return "forward:/SystemRole/list";
@@ -138,7 +138,7 @@ public class SystemManagerController {
             model.addAttribute("msg", "含有外键关联数据，删除失败");
         }
         if (parentId == null)
-            return "forward:/page/SystemDepartment/list";
+            return "forward:/SystemDepartment/list";
         else {
             return "forward:/SystemDepartment/listLevel2?did=" + parentId;
         }
@@ -157,7 +157,7 @@ public class SystemManagerController {
         boolean result = systemManagerService.saveOrUpdateDepartment(department);
         Integer parentId = department.getParentId();
         if (parentId == null)
-            return "redirect:/page/SystemDepartment/list";
+            return "redirect:/SystemDepartment/list";
         else {
             return "redirect:/SystemDepartment/listLevel2?did=" + parentId;
         }
@@ -242,7 +242,7 @@ public class SystemManagerController {
     public String saveOrUpdateUser(Model model, User user,Integer[] roleIdList) {
         boolean result = systemManagerService.saveOrUpdateUser(user,roleIdList);
         if (result) {
-            return "redirect:/page/SystemUser/list";
+            return "redirect:/SystemUser/list";
         } else {
             model.addAttribute("msg", "添加失败");
             return "SystemUser/saveUI";

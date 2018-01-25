@@ -57,7 +57,7 @@
     <DIV ID="TableTail">
         <DIV ID="TableTail_inside">
             <A HREF="${pageContext.request.contextPath}/SystemDepartment/toSecondDepartmentUI?did=${parentId}"><IMG SRC="${pageContext.request.contextPath}/style/images/createNew.png"/></A>
-            <A HREF="${pageContext.request.contextPath}/page/SystemDepartment/list"><IMG
+            <A HREF="${pageContext.request.contextPath}/SystemDepartment/list"><IMG
                     SRC="${pageContext.request.contextPath}/style/blue/images/button/ReturnToPrevLevel.png"/></A>
         </DIV>
     </DIV>

@@ -28,7 +28,7 @@
 				<div id=Logout>
 					<div id=AwokeMsg><img id=LogoutImg src="${pageContext.request.contextPath}/style/blue/images/logout/logout.gif" border=0 /><img id=LogoutTitle src="${pageContext.request.contextPath}/style/blue/images/logout/logout1.gif" border=0 /></div>
 					<div id=LogoutOperate>
-                    <img src="${pageContext.request.contextPath}/style/blue/images/logout/logout2.gif" border=0 /> <a href="${pageContext.request.contextPath}/SystemUser/loginUI">重新进入系统</a>
+                    <img src="${pageContext.request.contextPath}/style/blue/images/logout/logout2.gif" border=0 /> <a href="${pageContext.request.contextPath}/">重新进入系统</a>
                     <img src="${pageContext.request.contextPath}/style/blue/images/logout/logout3.gif" border=0 /> <a href="javascript: closewin();">关闭当前窗口</a>
                     </div>
 				</div>

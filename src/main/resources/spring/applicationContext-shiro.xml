@@ -34,10 +34,12 @@
         <property name="filterChainDefinitions">
             <value>
                 <!-- 对静态资源设置匿名访问 -->
+                /favicon.ico = anon
                 /script/** = anon
                 /style/** = anon
                 /page/script/** = anon
                 /page/style/** = anon
+                /SystemUser/loginUI = anon
                 <!-- 无权访问页面 -->
                 /page/refuse = anon
                 <!-- 退出拦截，请求logout.action执行退出操作 -->
