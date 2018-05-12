@@ -84,7 +84,7 @@ public class ProcessDefinitionController {
      * @return
      */
     @RequestMapping(value = "/FlowProcessDefinition/showProcessImage")
-    public void showProcessImage(String pdId, HttpServletResponse response) {
+    public String showProcessImage(String pdId, HttpServletResponse response) {
         InputStream inputStream = processDefinitionService.findPngInputStream(pdId);
        // 从程序中写出下载到客户端
         OutputStream outputStream = null;
@@ -97,6 +97,7 @@ public class ProcessDefinitionController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return "/FlowProcessDefinition/list";
     }
 
 

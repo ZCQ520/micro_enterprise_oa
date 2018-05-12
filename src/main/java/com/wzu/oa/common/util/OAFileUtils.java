@@ -14,6 +14,11 @@ import java.util.UUID;
  */
 public  class OAFileUtils {
 
+    /**
+     * 存储文件工具方法
+     * @param file  输入保存文件
+     * @return path 返回保存路径
+     */
     public static String saveFile(MultipartFile file){
         String name = file.getOriginalFilename();
         String[] strings = name.split("\\.");

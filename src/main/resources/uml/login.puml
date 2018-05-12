@@ -1,0 +1,77 @@
+@startuml
+
+class UserController
+class UserRealem
+interface UserService
+interface UserResourceService
+class UserServiceImpl
+class UserResourceServiceImpl
+interface UserMapper
+interface UserResourceMapper
+interface ResourceMapper
+
+UserController --|> UserRealem
+UserRealem --|> UserService
+UserRealem --|> UserResourceService
+UserService <-- UserServiceImpl
+UserResourceService <-- UserResourceServiceImpl
+UserServiceImpl --|> UserMapper
+UserServiceImpl --|> ResourceMapper
+UserResourceServiceImpl --|> UserResourceMapper
+
+
+class UserController {
+UserService userService
+String login(HttpServletRequest request, Model model)
+String logout()
+}
+
+class UserRealem {
+UserService userService
+UserResourceService userResourceService
+String getName()
+boolean supports(AuthenticationToken token)
+protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals)
+protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token)
+}
+
+interface UserService {
+void addUser(User user)
+User findUserByUsername(String username)
+User getUserById(Integer userId)
+List<String> getUserPermissionsByResourceIds(List<Integer> resourceIds)
+}
+
+interface UserResourceService {
+void savePrivilege(Integer uid, List<UserResource> userResource)
+List<UserResource> getUserResourceByUserId(Integer userId)
+}
+
+class UserServiceImpl {
+UserMapper userMapper
+ResourceMapper resourceMapper
+void addUser(User user)
+User findUserByUsername(String username)
+User getUserById(Integer userId)
+List<String> getUserPermissionsByResourceIds(List<Integer> resourceIds)
+}
+
+class UserResourceServiceImpl {
+UserResourceMapper userResourceMapper
+void savePrivilege(Integer uid, List<UserResource> userResource)
+List<UserResource> getUserResourceByUserId(Integer userId)
+}
+
+interface UserMapper{
+
+}
+interface UserResourceMapper{
+int deletePrivilegeByUserId(Integer uid)
+int insertBatch(List<UserResource> userResource)
+List<UserResource> getUserResourceByUserId(Integer userId)
+}
+interface ResourceMapper{
+List<String> getUserPermissionsByResourceIds(Map<String, Object> map)
+}
+
+@enduml

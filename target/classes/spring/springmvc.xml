@@ -15,35 +15,29 @@
 		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 
     <context:component-scan base-package="com.wzu.oa.controller"/>
-
     <!-- annotation-driven:默认创建了多个对象：RequestMappingHandlerMapping，RequestMappingHandlerAdapter
-        也就提供对json格式支持
-     -->
+        也就提供对json格式支持 开启注解驱动 -->
     <mvc:annotation-driven/>
-
-
+    <!--静态资源访问-->
     <mvc:resources mapping="/script/**" location="/WEB-INF/script/"/>
     <mvc:resources mapping="/style/**" location="/WEB-INF/style/"/>
     <mvc:resources mapping="/page/script/**" location="/WEB-INF/script/"/>
     <mvc:resources mapping="/page/style/**" location="/WEB-INF/style/"/>
-
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
     <!-- 文件上传解析器 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="maxUploadSize" value="10240000"/>
         <property name="defaultEncoding" value="UTF-8"/>
     </bean>
-
     <!-- 开启aop，对类代理 -->
     <aop:config proxy-target-class="true"></aop:config>
+
+
     <!-- 开启shiro注解支持 -->
-
-
     <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
         <property name="securityManager" ref="securityManager"/>
     </bean>

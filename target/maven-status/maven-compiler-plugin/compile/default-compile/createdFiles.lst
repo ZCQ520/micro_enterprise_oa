@@ -25,7 +25,6 @@ com\wzu\oa\common\entity\DTO\ApproveInfoDTO.class
 com\wzu\oa\controller\KynamicController.class
 com\wzu\oa\common\entity\Kynamic.class
 com\wzu\oa\common\entity\Post.class
-com\wzu\oa\controller\UserControllerImpl.class
 com\wzu\oa\controller\ProcessDefinitionController.class
 com\wzu\oa\service\impl\SystemManagerServiceImpl.class
 com\wzu\oa\common\shiro\UserRealm.class
@@ -46,13 +45,13 @@ com\wzu\oa\mapper\DepartmentMapper.class
 com\wzu\oa\common\entity\DTO\ApplicationDTO.class
 com\wzu\oa\mapper\ApplicationMapper.class
 com\wzu\oa\mapper\UserPostRelativeMapper.class
-com\wzu\oa\common\exception\BusinessException.class
 com\wzu\oa\common\util\OAFileUtils.class
 com\wzu\oa\common\util\PrivilegeUtils.class
 com\wzu\oa\service\impl\UserServiceImpl.class
 com\wzu\oa\common\entity\User.class
 com\wzu\oa\common\entity\UserPostRelative.class
 com\wzu\oa\service\impl\ProcessDefinitionServiceImpl.class
+com\wzu\oa\controller\UserController.class
 com\wzu\oa\common\entity\DTO\UserDTO.class
 com\wzu\oa\mapper\KynamicMapper.class
 com\wzu\oa\mapper\UserResourceMapper.class

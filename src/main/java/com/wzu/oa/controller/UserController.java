@@ -1,7 +1,6 @@
 package com.wzu.oa.controller;
 
 
-import com.wzu.oa.common.exception.BusinessException;
 import com.wzu.oa.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -21,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Controller
 @RequestMapping("/user")
-public class UserControllerImpl {
+public class UserController {
 
     @Resource
     private UserService userService;

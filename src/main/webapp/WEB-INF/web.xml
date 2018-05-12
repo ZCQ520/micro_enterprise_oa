@@ -13,8 +13,6 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
-
-
     <!-- post乱码处理 -->
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>

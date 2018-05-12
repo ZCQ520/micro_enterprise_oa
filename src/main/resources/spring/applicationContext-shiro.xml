@@ -47,15 +47,6 @@
                 <!-- 必须通过身份认证方可访问，身份认 证的url必须和过虑器中指定的loginUrl一致 -->
                 / = authc
                 /** = authc
-                <!--             roles[XX]表示有XX角色才可访问
-                            /item/list.action = roles[item],authc
-                            /js/** anon
-                            /images/** anon
-                            /styles/** anon
-                             user表示身份认证通过或通过记住我认证通过的可以访问
-                            /** = user
-                             /**放在最下边，如果一个url有多个过虑器则多个过虑器中间用逗号分隔，如：/** = user,roles[admin] -->
-
             </value>
         </property>
     </bean>
@@ -66,7 +57,6 @@
     <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
         <property name="securityManager" ref="securityManager"/>
     </bean>
-
 
     <!-- 安全管理器 -->
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">

@@ -36,8 +36,6 @@
         <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml" />
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
     </bean>
-
-
     <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
         <property name="basePackage" value="com.wzu.oa.mapper" />
@@ -47,18 +45,12 @@
             </value>
         </property>
     </bean>
-
-
     <!-- 包扫描器，扫描带@Service注解的类 -->
     <context:component-scan base-package="com.wzu.oa"/>
-
     <!-- 事务管理器 -->
-    <bean id="transactionManager"
-          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <!-- 数据源 -->
-        <property name="dataSource" ref="dataSource"/>
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>  <!-- 数据源 -->
     </bean>
-
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
     <!-- 配置一个spring提供的对象，用于创建一个流程引擎配置对象 -->
@@ -67,7 +59,6 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="databaseSchemaUpdate" value="true"/>
     </bean>
-
     <!-- 创建流程引擎对象 -->
     <bean id="ProcessEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
         <property name="processEngineConfiguration" ref="ProcessEngineConfiguration"/>

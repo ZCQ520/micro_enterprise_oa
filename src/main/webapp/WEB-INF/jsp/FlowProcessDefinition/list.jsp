@@ -42,7 +42,7 @@
 					<td align="CENTER">${processDef.version}&nbsp;</td>
 					<td>${processDef.description}&nbsp;</td>
 					<td><a onClick="return delConfirm()" href="${pageContext.request.contextPath}/FlowProcessDefinition/deleteByKey?key=${processDef.key}">删除</a>
-						<a href="javascript: window.open('${pageContext.request.contextPath}/FlowProcessDefinition/showProcessImage?pdId=${processDef.id}');">查看流程图</a>
+						<a onclick="javascript: window.open('${pageContext.request.contextPath}/FlowProcessDefinition/showProcessImage?pdId=${processDef.id}');" href="#">查看流程图</a>
 					</td>
 			</tr>
         </c:forEach>

@@ -96,7 +96,7 @@
             <td><fmt:formatDate value="${applicationDTO.application.applyDate}" pattern="yyyy-MM-dd HH:mm:ss"/>&nbsp;</td>
             <td>${applicationDTO.application.status}&nbsp;</td>
             <td><a href="${pageContext.request.contextPath}/FlowFormFlow/showForm?applicationId=${applicationDTO.application.id}">查看申请信息</a>
-                <a href="${pageContext.request.contextPath}/FloFwFormFlow/approvedHistory?applicationId=${applicationDTO.application.id}">查看流转记录</a>
+                <a href="${pageContext.request.contextPath}/FlowFormFlow/approvedHistory?applicationId=${applicationDTO.application.id}">查看流转记录</a>
                     ${pageContext.request.contextPath}
             </td>
         </tr>
